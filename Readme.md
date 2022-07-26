@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Александр Кливец](https://up.htmlacademy.ru/adaptive/26/user/2081563).
-* Наставник: [Николай Котиков] (https://htmlacademy.ru/profile/niklcat).
+* Наставник: [Николай Котиков](https://htmlacademy.ru/profile/niklcat).
 
 ---
 
