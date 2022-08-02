@@ -1,0 +1,32 @@
+.services-item {
+  background-color: #F2F2F2;
+  padding: 30px 20px 22px 20px;
+}
+
+.services-item__title {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 29px;
+}
+
+.services-item__description {
+  color: #444444;
+  margin: 0;
+  margin-bottom: 42px;
+}
+
+.services-item__link {
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Oswald';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 16px;
+text-transform: uppercase;
+}

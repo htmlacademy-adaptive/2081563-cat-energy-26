@@ -1,0 +1,32 @@
+.main-nav {
+  background-color: #FFFFFF;
+}
+
+.main-nav__toogle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 16px;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.main-nav__item {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.main-nav__item-link {
+  color: inherit;
+  text-decoration: none;
+}
