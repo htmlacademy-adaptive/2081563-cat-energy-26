@@ -7,14 +7,14 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo-cat" href="index.html">
+    <a class="main-header__logo-cat">
       <img class="main-header__cat-image" src="img/header/logo-cat-mobile.svg" width="34" height="38"
-        alt="Логотип кота."> </a>
-    <a class="main-header__logo-name logo-name" href="index.html">
+        alt="Логотип кота"> </a>
+    <a class="main-header__logo-name logo-name">
       <img class="main-header__name-image" src="img/header/logo-name.svg" width="101" height="18"
-        alt="Магазин Cat Energy.">
+        alt="Магазин Cat Energy">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toogle" type="button">
@@ -24,17 +24,17 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--current">
-            <a href="index.html">
+            <a class="main-nav__item-link" href="index.html">
               главная
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="catalog.html">
+            <a class="main-nav__item-link" href="catalog.html">
               каталог продукции
             </a>
           </li>
           <li class="main-nav__item">
-            <a>
+            <a class="main-nav__item-link">
               подбор программы
             </a>
           </li>
@@ -50,62 +50,56 @@
       <form class="form" action="https://echo.htmlacademy.ru/" method="post">
         <section class="form__questionnaire questionnaire">
           <h2 class="visually-hidden">Анкета.</h2>
-          <ul class="form__list field-questionnaire">
-            <li class="field-questionnaire__item field">
-              <label class="field__label" for="form-name">ИМЯ:*</label>
+          <fieldset class="form__list form__list--questionnaire">
+              <label class="field" for="form-name">
+                <span class="field__label">ИМЯ:*</span>
               <input class="field__input" type="text" id="form-name" name="field-name" value="барсик" required>
-            </li>
-            <li class="field-questionnaire__item field">
-              <label class="field__label" for="form-weight">Вес (кг):*</label>
+            </label>
+              <label class="field" for="form-weight">
+                <span class="field__label">Вес (кг):*</span>
               <input class="field__input" type="number" id="form-weight" name="field-weight" value="7" required>
-            </li>
-            <li class="field-questionnaire__item field">
-              <label class="field__label" for="form-age">Возраст (лет):</label>
+              </label>
+              <label class="field" for="form-age">
+                <span class="field__label">Возраст (лет)</span>
               <input class="field__input" type="number" id="form-age" name="field-age" value="7">
-            </li>
-          </ul>
-          <ul class="form__list radio-questionnaire">
-            <li class="radio-questionnaire__item">
+              </label>
+          </fieldset>
+          <fieldset class="form__list ">
               <label class="control">
-                <input class="visually-hidden control__input" type="radio" name="questionnaire" value="weight-loss"
+                <input class="control__input" type="radio" name="questionnaire" value="weight-loss"
                   checked>
                 <span class="control__mark control__mark--radio"></span>
                 <span class="control__label">похудение</span>
               </label>
-            </li>
-            <li class="radio-questionnaire__item">
               <label class="control">
-                <input class="visually-hidden control__input" type="radio" name="questionnaire" value="mass-gain">
+                <input class="control__input" type="radio" name="questionnaire" value="mass-gain">
                 <span class="control__mark control__mark--radio"></span>
                 <span class="control__label">Набор массы</span>
               </label>
-            </li>
-            <li class="radio-questionnaire__item">
               <label class="control">
-                <input class="visually-hidden control__input" type="radio" name="questionnaire" value="dont-know">
+                <input class="vcontrol__input" type="radio" name="questionnaire" value="dont-know">
                 <span class="control__mark control__mark--radio"></span>
                 <span class="control__label">Не знаю (Нужен ваш совет)</span>
               </label>
-            </li>
-          </ul>
+          </fieldset>
         </section>
-        <section class="form__contacts contacts">
-          <h2 class="contacts__title title">Контактные данные<br>
+        <section class="form__contacts contacts-section">
+          <h2 class="contacts-section__title title">Контактные данные<br>
             (владельца кота)</h2>
-          <ul class="contacts">
-            <li class="contacts__item field field">
-              <label class="field__label" for="form-email">E-mail:*</label>
+          <fieldset class="form__list--contacts">
+              <label class="field" for="form-email">
+                <span class="field__label">E-mail:*</span>
               <input class="field__input field__input--email" type="email" id="form-email" name="field-email"
                 value="kuklachev@gmail.com" required>
-            </li>
-            <li class="contacts__item field field">
-              <label class="field__label" for="form-tel">Телефон:*</label>
+              </label>
+              <label class="field" for="form-tel">
+                <span class="field__label">Телефон:*</span>
               <input class="field__input field__input--tel" type="tel" id="form-tel" name="field-tel"
                 value="8 (960) 900-60-90" required>
-            </li>
-          </ul>
+              </label>
+          </fieldset>
         </section>
-        <section class="comment">
+        <section class="main-form__comment comment">
           <h2 class="comment__title title">
             Комментарий
           </h2>
@@ -113,38 +107,30 @@
 Расскажите обо всех повадках кота
           </textarea>
         </section>
-        <section class="extra">
+        <section class="main-form__extra extra">
           <h2 class="extra__title title">Дополнительно</h2>
-          <ul class="extra__list">
-            <li class="extra__item">
+          <fieldset class="extra__list">
               <label class="control">
                 <input class="visually-hidden control__input" type="checkbox" name="sweetener" checked>
                 <span class="control__mark control__mark--checkbox"></span>
                 <span class="control__label">сахарозаменитель</span>
               </label>
-            </li>
-            <li class="extra__item">
               <label class="control">
                 <input class="visually-hidden control__input" type="checkbox" name="drinking-water">
                 <span class="control__mark control__mark--checkbox"></span>
                 <span class="control__label">питьевая вода</span>
               </label>
-            </li>
-            <li class="extra__item">
               <label class="control">
                 <input class="visually-hidden control__input" type="checkbox" name="milk">
                 <span class="control__mark control__mark--checkbox"></span>
                 <span class="control__label">молоко</span>
               </label>
-            </li>
-            <li class="extra__item">
               <label class="control">
                 <input class="visually-hidden control__input" type="checkbox" name="vitamins">
                 <span class="control__mark control__mark--checkbox"></span>
                 <span class="control__label">витамины</span>
               </label>
-            </li>
-          </ul>
+          </fieldset>
         </section>
         <button class="form__submit button" type="submit">отправить заявку</button>
         <p class="form__legend">
@@ -156,19 +142,22 @@
     </div>
   </main>
   <footer class="main-footer">
-    <section class="main-footer__contacts">
+    <section class="main-footer__contacts contacts">
+      <div class="contacts__wrapper">
       <h2 class="visually-hidden">Контактные данные.</h2>
       <b class="contacts__slogan">приглашаем к сотрудничеству дилеров!</b>
       <address class="contacts__address">ул. Большая
         Конюшенная, д. 19/8
         Санкт-Петербург</address>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.617229376069!2d30.322822093221312!3d59.938493445474826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1659069154588!5m2!1sru!2s"
-        width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </section>
-    <div class="main-footer__social social">
-      <a class="main-footer__logo-name logo-name" href="index.html">
+    <iframe class="frame"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.617229376069!2d30.322822093221312!3d59.938493445474826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1659069154588!5m2!1sru!2s"
+        width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="main-footer__social">
+      <div class="social">
+      <a class="main-footer__logo-name logo-name">
         <img class="main-header__name-image" src="img/header/logo-name.svg" width="101" height="18"
           alt="Магазин Cat Energy.">
       </a>
@@ -214,6 +203,7 @@
           </svg>
         </a>
       </div>
+    </div>
     </div>
   </footer>
 </body>

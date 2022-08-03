@@ -7,14 +7,14 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo-cat" href="index.html">
+    <a class="main-header__logo-cat">
       <img class="main-header__cat-image" src="img/header/logo-cat-mobile.svg" width="34" height="38"
-        alt="Логотип кота."> </a>
-    <a class="main-header__logo-name logo-name" href="index.html">
+        alt="Логотип кота"> </a>
+    <a class="main-header__logo-name logo-name">
       <img class="main-header__name-image" src="img/header/logo-name.svg" width="101" height="18"
-        alt="Магазин Cat Energy.">
+        alt="Магазин Cat Energy">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toogle" type="button">
@@ -24,17 +24,17 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--current">
-            <a href="index.html">
+            <a class="main-nav__item-link" href="index.html">
               главная
             </a>
           </li>
           <li class="main-nav__item">
-            <a>
+            <a class="main-nav__item-link">
               каталог продукции
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html">
+            <a class="main-nav__item-link" href="form.html">
               подбор программы
             </a>
           </li>
@@ -43,6 +43,7 @@
     </nav>
   </header>
   <main class="main-catalog">
+    <div class="main-catalog__wrapper">
     <h1 class="main-catalog__title">Каталог продукции</h1>
     <section class="products">
       <div class="products__wrapper">
@@ -52,13 +53,13 @@
             <img class="main-product__image" src="img/catalog/products/catalog-1-desktop1S.jpg" width="68" height="86"
               alt="Cat Energy PRO 500 г.">
             <p class="main-product__title">Cat Energy PRO 500 г</p>
-            <dl>
-              <dt>Масса</dt>
-              <dd>500 г</dd>
-              <dt>Вкус</dt>
-              <dd>Курица</dd>
-              <dt>Цена</dt>
-              <dd>700 Р.</dd>
+            <dl class="main-product__list">
+              <dt class="main-product__description-title">Масса</dt>
+              <dd class="main-product__description-details">500 г</dd>
+              <dt class="main-product__description-title">Вкус</dt>
+              <dd class="main-product__description-details">Курица</dd>
+              <dt class="main-product__description-title">Цена</dt>
+              <dd class="main-product__description-details">700 Р.</dd>
             </dl>
             <a class="main-product__button button" href="#">
               заказать
@@ -68,13 +69,13 @@
             <img class="main-product__image" src="img/catalog/products/catalog-2-desktop1L.jpg" width="84" height="101"
               alt="Cat Energy PRO 1000 г.">
             <p class="main-product__title">Cat Energy PRO 1000 г</p>
-            <dl>
-              <dt>Масса</dt>
-              <dd>1000 г</dd>
-              <dt>Вкус</dt>
-              <dd>Курица</dd>
-              <dt>Цена</dt>
-              <dd>1000 Р.</dd>
+            <dl class="main-product__list">
+              <dt class="main-product__description-title">Масса</dt>
+              <dd class="main-product__description-details">1000 г</dd>
+              <dt class="main-product__description-title">Вкус</dt>
+              <dd class="main-product__description-details">Курица</dd>
+              <dt class="main-product__description-title">Цена</dt>
+              <dd class="main-product__description-details">1000 Р.</dd>
             </dl>
             <a class="main-product__button button" href="#">
               заказать
@@ -84,13 +85,13 @@
             <img class="main-product__image" src="img/catalog/products/catalog-3-desktopS.jpg" width="68" height="78"
               alt="Cat Energy PRO 500 г.">
             <p class="main-product__title">Cat Energy PRO 500 г</p>
-            <dl>
-              <dt>Масса</dt>
-              <dd>500 г</dd>
-              <dt>Вкус</dt>
-              <dd>Рыба</dd>
-              <dt>Цена</dt>
-              <dd>700 Р.</dd>
+            <dl class="main-product__list">
+              <dt class="main-product__description-title">Масса</dt>
+              <dd class="main-product__description-details">500 г</dd>
+              <dt class="main-product__description-title">Вкус</dt>
+              <dd class="main-product__description-details">Рыба</dd>
+              <dt class="main-product__description-title">Цена</dt>
+              <dd class="main-product__description-details">700 Р.</dd>
             </dl>
             <a class="main-product__button button" href="#">
               заказать
@@ -100,13 +101,13 @@
             <img class="main-product__image" src="img/catalog/products/catalog-4-desktop1L.jpg" width="84" height="101"
               alt="Cat Energy PRO 1000 г.">
             <p class="main-product__title">Cat Energy PRO 1000 г</p>
-            <dl>
-              <dt>Масса</dt>
-              <dd>1000 г</dd>
-              <dt>Вкус</dt>
-              <dd>Рыба</dd>
-              <dt>Цена</dt>
-              <dd>1000 Р.</dd>
+            <dl class="main-product__list">
+              <dt class="main-product__description-title">Масса</dt>
+              <dd class="main-product__description-details">1000 г</dd>
+              <dt class="main-product__description-title">Вкус</dt>
+              <dd class="main-product__description-details">Рыба</dd>
+              <dt class="main-product__description-title">Цена</dt>
+              <dd class="main-product__description-details">1000 Р.</dd>
             </dl>
             <a class="main-product__button button" href="#">
               заказать
@@ -116,13 +117,13 @@
             <img class="main-product__image" src="img/catalog/products/catalog-5-desktopS.jpg" width="68" height="78"
               alt="Cat Energy slim 500 г.">
             <p class="main-product__title">Cat Energy slim 500 г</p>
-            <dl>
-              <dt>Масса</dt>
-              <dd>500 г</dd>
-              <dt>Вкус</dt>
-              <dd>Гречка</dd>
-              <dt>Цена</dt>
-              <dd>400 Р.</dd>
+            <dl class="main-product__list">
+              <dt class="main-product__description-title">Масса</dt>
+              <dd class="main-product__description-details">500 г</dd>
+              <dt class="main-product__description-title">Вкус</dt>
+              <dd class="main-product__description-details">Гречка</dd>
+              <dt class="main-product__description-title">Цена</dt>
+              <dd class="main-product__description-details">400 Р.</dd>
             </dl>
             <a class="main-product__button button" href="#">
               заказать
@@ -132,13 +133,13 @@
             <img class="main-product__image" src="img/catalog/products/catalog-6-desktop.jpg" width="84" height="100"
               alt="Cat Energy slim 1000 г.">
             <p class="main-product__title">Cat Energy slim 1000 г</p>
-            <dl>
-              <dt>Масса</dt>
-              <dd>1000 г</dd>
-              <dt>Вкус</dt>
-              <dd>Гречка</dd>
-              <dt>Цена</dt>
-              <dd>700 Р.</dd>
+            <dl class="main-product__list">
+              <dt class="main-product__description-title">Масса</dt>
+              <dd class="main-product__description-details">1000 г</dd>
+              <dt class="main-product__description-title">Вкус</dt>
+              <dd class="main-product__description-details">Гречка</dd>
+              <dt class="main-product__description-title">Цена</dt>
+              <dd class="main-product__description-details">700 Р.</dd>
             </dl>
             <a class="main-product__button button" href="#">
               заказать
@@ -148,13 +149,13 @@
             <img class="main-product__image" src="img/catalog/products/catalog-7-desktop.jpg" width="72" height="84"
               alt="Cat Energy slim 500 г.">
             <p class="main-product__title">Cat Energy slim 500 г</p>
-            <dl>
-              <dt>Масса</dt>
-              <dd>500 г</dd>
-              <dt>Вкус</dt>
-              <dd>Рис</dd>
-              <dt>Цена</dt>
-              <dd>500 Р.</dd>
+            <dl class="main-product__list">
+              <dt class="main-product__description-title">Масса</dt>
+              <dd class="main-product__description-details">500 г</dd>
+              <dt class="main-product__description-title">Вкус</dt>
+              <dd class="main-product__description-details">Рис</dd>
+              <dt class="main-product__description-title">Цена</dt>
+              <dd class="main-product__description-details">500 Р.</dd>
             </dl>
             <a class="main-product__button button" href="#">
               заказать
@@ -162,14 +163,14 @@
           </li>
           <li class="main-product">
             <a class="main-product__link-more" href="#">
-              <svg aria-hidden="true" focusable="false" width="30" height="30" viewBox="0 0 30 30" fill="none"
+              <svg class="main-product__plus" aria-hidden="true" focusable="false" width="30" height="30" viewBox="0 0 30 30" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path stroke="#D3D3D3" stroke-width="2" d="M15 0v30M30 15H0" />
               </svg>
               <p class="main-product__title">Показать еще 100500 товаров</p>
               <p class="main-product__description">На самом деле вкусов гораздо больше!</p>
-              <span class="button button--more">показать все</span>
             </a>
+            <button class="button button--more" type="button">показать все</button>
           </li>
         </ul>
       </div>
@@ -207,6 +208,7 @@
         </ul>
       </div>
     </section>
+    <div class="promotion__wrapper">
     <article class="promotion">
       <h2 class="visually-hidden">Акция.</h2>
       <a class="promotion__link" href="#">
@@ -226,21 +228,26 @@
           кота в подарок!</b>
       </a>
     </article>
+  </div>
+    </div>
   </main>
   <footer class="main-footer">
-    <section class="main-footer__contacts">
+    <section class="main-footer__contacts contacts">
+      <div class="contacts__wrapper">
       <h2 class="visually-hidden">Контактные данные.</h2>
       <b class="contacts__slogan">приглашаем к сотрудничеству дилеров!</b>
       <address class="contacts__address">ул. Большая
         Конюшенная, д. 19/8
         Санкт-Петербург</address>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.617229376069!2d30.322822093221312!3d59.938493445474826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1659069154588!5m2!1sru!2s"
-        width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </section>
-    <div class="main-footer__social social">
-      <a class="main-footer__logo-name logo-name" href="index.html">
+    <iframe class="frame"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.617229376069!2d30.322822093221312!3d59.938493445474826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1659069154588!5m2!1sru!2s"
+        width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="main-footer__social">
+      <div class="social">
+      <a class="main-footer__logo-name logo-name">
         <img class="main-header__name-image" src="img/header/logo-name.svg" width="101" height="18"
           alt="Магазин Cat Energy.">
       </a>
@@ -286,6 +293,7 @@
           </svg>
         </a>
       </div>
+    </div>
     </div>
   </footer>
 </body>
