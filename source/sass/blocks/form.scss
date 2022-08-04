@@ -1,0 +1,40 @@
+.form__questionnaire {
+  margin-bottom: 45px;
+}
+
+.form__contacts {
+  margin-bottom: 23px;
+}
+
+.form__comment {
+  margin-bottom: 23px;
+}
+
+.form__extra {
+  margin-bottom: 34px;
+}
+
+.form__list:not(:last-child) {
+  margin-bottom: 19px;
+}
+
+.form__list--questionnaire {
+  margin-bottom: 27px;
+}
+
+.form__list--contacts {
+  margin-bottom: 23.5px;
+}
+
+.form__submit {
+  margin-bottom: 21px;
+}
+
+.form__legend {
+  margin: 0;
+}
+
+small {
+  font-size: 14px;
+  line-height: 16px;
+}

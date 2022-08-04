@@ -1,0 +1,37 @@
+.main-product__image {
+  display: block;
+}
+
+.main-product__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.main-product__list {
+  margin: 0;
+  padding: 0;
+}
+
+.main-product__description-title {
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.main-product__description-details {
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+  margin: 0;
+}
+
+.main-product__link-more {
+  text-decoration: none;
+  color: inherit;
+}

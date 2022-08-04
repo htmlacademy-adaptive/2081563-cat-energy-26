@@ -1,0 +1,49 @@
+.presentation {
+  background-color: #eaeaea;
+}
+
+.presentation__wrapper {
+  margin: 0 auto;
+  width: 280px;
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+.presentation__title {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.presentation__description {
+  color: #444444;
+  margin: 0;
+}
+
+.presentation__list {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.presentation__description-details {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.presentation__description-title {
+  font-size: 12px;
+  line-height: 100%;
+  color: #444444;
+}
+
+.presentation__total {
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
