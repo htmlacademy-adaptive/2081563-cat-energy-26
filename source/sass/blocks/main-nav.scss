@@ -33,8 +33,8 @@
 
 .main-nav__wrapper {
   display: none;
-}
 
-.main-nav__wrapper--open {
-  display: block;
+  &--open {
+    display: block;
+  }
 }
