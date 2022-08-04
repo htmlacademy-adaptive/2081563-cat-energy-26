@@ -2,10 +2,11 @@
   margin: 0 auto;
   width: 280px;
   margin-bottom: 20px;
+  padding-top: 27px;
 }
 
 .offer__slogan {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -16,7 +17,7 @@
 }
 
 .offer__description {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -30,4 +31,10 @@
 .offer__image {
   display: block;
   margin-bottom: 3px;
+}
+
+.offer {
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 302px, #ffffff 302px), url("../img/main/index-background-desktop2.jpg");
+  background-repeat: no-repeat;
+  color: #ffffff;
 }
