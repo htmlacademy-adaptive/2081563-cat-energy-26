@@ -1,3 +1,9 @@
+.offer {
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 302px, #ffffff 302px), url("../img/main/index-background-desktop2.jpg");
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
 .offer__wrapper {
   margin: 0 auto;
   width: 280px;
@@ -11,8 +17,7 @@
   font-size: 36px;
   line-height: 36px;
   text-align: center;
-  margin: 0;
-  margin-bottom: 25px;
+  margin: 0 0 25px;
 }
 
 .offer__description {
@@ -22,18 +27,11 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 29px;
+  margin: 0 0 29px;
   text-align: center;
 }
 
 .offer__image {
   display: block;
   margin-bottom: 3px;
-}
-
-.offer {
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 302px, #ffffff 302px), url("../img/main/index-background-desktop2.jpg");
-  background-repeat: no-repeat;
-  color: #ffffff;
 }

@@ -1,7 +1,6 @@
 .main-form__container {
-  margin: 0 auto;
+  margin: 0 auto 32px;
   width: 280px;
-  margin-bottom: 32px;
 }
 
 .main-form__title {
@@ -14,8 +13,7 @@
 }
 
 .main-form__description {
-  margin: 0;
-  margin-bottom: 39px;
+  margin: 0 0 39px;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
