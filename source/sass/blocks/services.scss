@@ -6,3 +6,43 @@
   margin: 0 auto;
   width: 280px;
 }
+
+.services-item__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media (min-width: 768px) {
+  .services__wrapper {
+    width: 708px;
+  }
+
+  .services__loss-icon {
+    position: absolute;
+    right: 92px;
+    top: 81px;
+  }
+
+  .services__gain-icon {
+    position: absolute;
+    right: 28px;
+    top: 135px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .services__wrapper {
+    width: 1220px;
+    display: flex;
+  }
+
+  .services__loss-icon {
+    position: static;
+  }
+
+  .services__gain-icon {
+    position: static;
+  }
+
+}

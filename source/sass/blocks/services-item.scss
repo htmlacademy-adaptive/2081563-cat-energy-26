@@ -1,6 +1,8 @@
 .services-item {
   background-color: #f2f2f2;
   padding: 30px 20px 22px 20px;
+  margin-bottom: 20px;
+  position: relative;
 }
 
 .services-item__title {
@@ -27,4 +29,36 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .services-item {
+    padding: 77px 316px 53px 52px;
+    margin-bottom: 30px;
+  }
+
+  .services-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .services-item__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .services-item__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .services-item__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .services-item {
+    margin: 0;
+  }
 }

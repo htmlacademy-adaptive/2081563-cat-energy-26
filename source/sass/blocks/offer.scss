@@ -2,12 +2,14 @@
   background-image: linear-gradient(rgba(104, 183, 56, 0.85) 302px, #ffffff 302px), url("../img/main/index-background-desktop2.jpg");
   background-repeat: no-repeat;
   color: #ffffff;
+  background-position: center top;
 }
 
 .offer__wrapper {
   margin: 0 auto;
   width: 280px;
   padding-top: 27px;
+  position: relative;
 }
 
 .offer__slogan {
@@ -33,5 +35,46 @@
 
 .offer__image {
   display: block;
-  margin-bottom: 3px;
+  margin: 0 auto 3px;
+}
+
+@media (min-width: 768px) {
+  .offer {
+    background-image: none;
+  }
+
+  .offer__wrapper {
+    margin: 0 auto;
+    width: 709px;
+    padding-top: 62px;
+  }
+
+  .offer__slogan {
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    text-align: left;
+  }
+
+  .offer__description {
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    text-align: left;
+  }
+
+  .offer__to-catalog {
+    position: absolute;
+    top: 292px;
+    width: 244px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .offer {
+    background-image: linear-gradient(-90deg, rgba(104, 183, 56, 0.85) 720px, #ffffff 720px), url("../img/main/index-background-desktop2.jpg");
+    background-repeat: no-repeat;
+    color: #ffffff;
+    background-position: right top;
+  }
 }

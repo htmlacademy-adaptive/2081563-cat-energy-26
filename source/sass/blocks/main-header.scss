@@ -9,4 +9,24 @@
   margin-bottom: 17px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .main-header {
+    margin: 0 auto;
+    width: 708px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-header {
+    margin: auto;
+    position: absolute;
+    width: 1220px;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
 }
