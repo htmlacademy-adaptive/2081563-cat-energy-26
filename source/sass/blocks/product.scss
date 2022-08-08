@@ -17,3 +17,8 @@
 .product__price {
   color: #444444;
 }
+
+.product__attribute {
+  display: flex;
+  justify-content: space-between;
+}

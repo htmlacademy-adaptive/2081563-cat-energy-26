@@ -5,6 +5,9 @@
 .services__wrapper {
   margin: 0 auto;
   width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .services-item__wrapper {
@@ -13,9 +16,10 @@
   justify-content: flex-start;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .services__wrapper {
     width: 708px;
+    gap: 30px;
   }
 
   .services__loss-icon {
@@ -31,10 +35,11 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop-width) {
   .services__wrapper {
     width: 1220px;
-    display: flex;
+    flex-direction: row;
+    gap: 80px;
   }
 
   .services__loss-icon {
@@ -44,5 +49,4 @@
   .services__gain-icon {
     position: static;
   }
-
 }
