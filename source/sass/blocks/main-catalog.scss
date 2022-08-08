@@ -2,6 +2,7 @@
   margin: 0 auto;
   width: 280px;
   padding-top: 27px;
+  position: relative;
 }
 
 .main-catalog__title {
@@ -19,6 +20,7 @@
 
 .main-catalog__another-products {
   margin-bottom: 54px;
+  position: relative;
 }
 
 .main-catalog__promotion {
@@ -39,5 +41,9 @@
 @media (min-width: $desktop-width) {
   .main-catalog__wrapper {
     width: 1220px;
+  }
+
+  .main-catalog__promotion {
+    margin: 0;
   }
 }

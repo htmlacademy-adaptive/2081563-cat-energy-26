@@ -9,3 +9,20 @@
   line-height: 20px;
   color: inherit;
 }
+
+@media (min-width: $tablet-width) {
+  .promotion__link {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promotion {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 289px;
+    width: 245px;
+  }
+}
