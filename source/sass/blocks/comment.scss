@@ -1,3 +1,23 @@
 .comment__title {
   margin: 0 0 38px;
 }
+
+.comment__form {
+  width: 280px;
+  height: 150px;
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .comment__form {
+    width: 631px;
+    height: 174px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comment__form {
+    width: 1220px;
+  }
+}

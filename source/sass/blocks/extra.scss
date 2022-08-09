@@ -1,3 +1,20 @@
 .extra__title {
   margin: 0 0 34px;
 }
+
+@media (min-width: $tablet-width) {
+  .extra__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 523px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra__list {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+  }
+}
