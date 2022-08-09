@@ -1,11 +1,14 @@
 .contacts {
   background-color: #f2f2f2;
+  position: relative;
 }
 
 .contacts__wrapper {
   margin: 0 auto;
   width: 280px;
   padding: 26px 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .contacts__slogan {
@@ -22,4 +25,29 @@
   line-height: 20px;
   color: #444444;
   font-style: normal;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    width: 708px;
+    padding: 26px 40px;
+  }
+
+  .contacts__slogan {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .contacts__address {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__wrapper {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    background-color: #ffffff;
+  }
 }

@@ -3,12 +3,15 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="main-header">
+    <div class="main-header__wrapper">
+    <div class="main-header__wrapper-links">
     <a class="main-header__logo-cat" href="index.html">
       <img class="main-header__cat-image" src="img/header/logo-cat-mobile.svg" width="34" height="38"
         alt="Логотип кота"> </a>
@@ -16,12 +19,13 @@
       <img class="main-header__name-image" src="img/header/logo-name.svg" width="101" height="18"
         alt="Магазин Cat Energy">
     </a>
+  </div>
     <nav class="main-nav">
       <button class="main-nav__toogle" type="button">
         <span class="visually-hidden">Открыть меню.</span>
         <svg class="toogle-burger" aria-hidden="true" focusable="false" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#000" stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24"/></svg>
       </button>
-      <!-- Клас main-nav__wrapper--open отображает меню -->
+      <!-- Класс main-nav__wrapper--open отображает меню -->
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--current">
@@ -42,6 +46,7 @@
         </ul>
       </div>
     </nav>
+  </div>
   </header>
   <main class="main-catalog">
     <div class="main-catalog__wrapper">
@@ -184,27 +189,35 @@
         <ul class="another-products__list">
           <li class="another-products__item product">
             <h3 class="product__title">Сахарозаменитель</h3>
+            <div class="product__attribute">
             <p class="product__description">1 упаковка (100 г)</p>
-            <span class="product__price">200 Р.</span>
-            <a class="button" href="#">заказать</a>
+            <span class="product__description">200 Р.</span>
+          </div>
+            <a class="button product__button" href="#">заказать</a>
           </li>
           <li class="another-products__item product">
             <h3 class="product__title">питьевая вода</h3>
+            <div class="product__attribute">
             <p class="product__description">5 литров</p>
-            <span class="product__price">50 Р.</span>
-            <a class="button" href="#">заказать</a>
+            <span class="product__description">50 Р.</span>
+          </div>
+            <a class="button product__button" href="#">заказать</a>
           </li>
           <li class="another-products__item product">
             <h3 class="product__title">молоко</h3>
+            <div class="product__attribute">
             <p class="product__description">1 литр</p>
-            <span class="product__price">100 Р.</span>
-            <a class="button" href="#">заказать</a>
+            <span class="product__description">100 Р.</span>
+          </div>
+            <a class="button product__button" href="#">заказать</a>
           </li>
           <li class="another-products__item product">
             <h3 class="product__title">витамины</h3>
+            <div class="product__attribute">
             <p class="product__description">1 упаковка (30 г)</p>
-            <span class="product__price">300 Р.</span>
-            <a class="button" href="#">заказать</a>
+            <span class="product__description">300 Р.</span>
+          </div>
+            <a class="button product__button" href="#">заказать</a>
           </li>
         </ul>
       </div>
@@ -231,7 +244,7 @@
     </div>
   </main>
   <footer class="main-footer">
-    <section class="main-footer__contacts contacts">
+    <section class="main-footer__contacts--index contacts">
       <div class="contacts__wrapper">
       <h2 class="visually-hidden">Контактные данные.</h2>
       <b class="contacts__slogan">приглашаем к сотрудничеству дилеров!</b>
@@ -239,11 +252,11 @@
         Конюшенная, д. 19/8
         Санкт-Петербург</address>
       </div>
-    </section>
-    <!-- <iframe class="frame"
+    <iframe class="main-footer__frame"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.617229376069!2d30.322822093221312!3d59.938493445474826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1659069154588!5m2!1sru!2s"
         width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
     <div class="main-footer__social">
       <div class="social">
       <a class="main-footer__logo-name logo-name" href="index.html">

@@ -6,4 +6,17 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+  display: flex;
+  justify-content: space-between;
+}
+
+.field__input {
+  flex-grow: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .field {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

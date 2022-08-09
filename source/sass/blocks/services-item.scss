@@ -1,6 +1,7 @@
 .services-item {
   background-color: #f2f2f2;
   padding: 30px 20px 22px 20px;
+  position: relative;
 }
 
 .services-item__title {
@@ -10,14 +11,12 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 29px;
+  margin: 0 0 29px;
 }
 
 .services-item__description {
   color: #444444;
-  margin: 0;
-  margin-bottom: 42px;
+  margin: 0 0 42px;
 }
 
 .services-item__link {
@@ -29,4 +28,29 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .services-item {
+    padding: 77px 316px 53px 52px;
+  }
+
+  .services-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .services-item__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .services-item__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .services-item__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

@@ -2,6 +2,7 @@
   margin: 0 auto;
   width: 280px;
   padding-top: 27px;
+  position: relative;
 }
 
 .main-catalog__title {
@@ -10,8 +11,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  margin: 0;
-  margin-bottom: 41px;
+  margin: 0 0 41px;
 }
 
 .main-catalog__products {
@@ -20,8 +20,30 @@
 
 .main-catalog__another-products {
   margin-bottom: 54px;
+  position: relative;
 }
 
 .main-catalog__promotion {
   margin-bottom: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-catalog__wrapper {
+    width: 707px;
+  }
+
+  .main-catalog__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-catalog__wrapper {
+    width: 1220px;
+  }
+
+  .main-catalog__promotion {
+    margin: 0;
+  }
 }

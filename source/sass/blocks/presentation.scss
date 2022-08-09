@@ -20,8 +20,10 @@
 }
 
 .presentation__list {
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 124px);
+  column-gap: 32px;
 }
 
 .presentation__description-details {
@@ -30,6 +32,8 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+  grid-row: 1 / 2;
+  margin: 0;
 }
 
 .presentation__description-title {
@@ -39,11 +43,62 @@
 }
 
 .presentation__total {
-  margin: 0;
-  margin-bottom: 40px;
+  margin: 0 0 40px;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .presentation {
+    background-image: linear-gradient(360deg, #eaeaea 462px, #ffffff 462px);
+  }
+
+  .presentation__wrapper {
+    width: 708px;
+  }
+
+  .presentation__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .presentation__list-total-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .presentation__description-details {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .presentation__description-title {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .presentation__total {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .presentation__wrapper {
+    width: 1220px;
+    display: flex;
+    gap: 193px;
+  }
+
+  .presentation__list-total-wrapper {
+    display: block;
+  }
+
+  .presentation__total {
+    text-align: left;
+  }
 }

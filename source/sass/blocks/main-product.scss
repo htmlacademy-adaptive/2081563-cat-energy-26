@@ -35,3 +35,26 @@
   text-decoration: none;
   color: inherit;
 }
+
+@media (min-width: $tablet-width) {
+  .main-product {
+    background-color: #f2f2f2;
+  }
+
+  .main-product__button {
+    width: 248px;
+  }
+
+  .main-product__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .main-product__description-title {
+    font-size: 16px;
+  }
+
+  .main-product__description-details {
+    font-size: 16px;
+  }
+}

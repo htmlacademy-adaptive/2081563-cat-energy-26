@@ -34,7 +34,28 @@
   margin: 0;
 }
 
-small {
+.form__small {
   font-size: 14px;
   line-height: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__submit-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 523px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__list--contacts {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__submit-wrapper {
+    justify-content: flex-start;
+    width: 1220px;
+  }
 }

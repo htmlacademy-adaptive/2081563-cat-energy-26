@@ -1,3 +1,8 @@
+.promotion {
+  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/main/image-article.jpg");
+  color: #ffffff;
+}
+
 .promotion__link {
   text-decoration: none;
   font-size: 16px;
@@ -5,7 +10,19 @@
   color: inherit;
 }
 
-.promotion {
-  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/main/image-article.jpg");
-  color: #ffffff;
+@media (min-width: $tablet-width) {
+  .promotion__link {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promotion {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 289px;
+    width: 245px;
+  }
 }

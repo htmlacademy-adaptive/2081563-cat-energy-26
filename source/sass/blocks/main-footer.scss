@@ -10,3 +10,15 @@
 .main-footer__social {
   background-color: #f2f2f2;
 }
+
+.main-footer__frame {
+  display: block;
+  width: 100%;
+  height: 362px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer__frame {
+    height: 400px;
+  }
+}

@@ -6,4 +6,12 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #222222;
+  display: flex;
+}
+
+@media (min-width: $tablet-width) {
+  .control {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

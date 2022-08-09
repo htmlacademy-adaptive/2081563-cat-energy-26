@@ -6,8 +6,22 @@
 }
 
 .social__list {
-  margin: 0;
-  margin-bottom: 43px;
+  margin: 0 0 43px;
   padding: 0;
   list-style-type: none;
+  display: flex;
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    width: 708px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    width: 1220px;
+  }
 }

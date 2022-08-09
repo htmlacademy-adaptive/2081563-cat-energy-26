@@ -5,4 +5,48 @@
 .services__wrapper {
   margin: 0 auto;
   width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.services-item__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media (min-width: $tablet-width) {
+  .services__wrapper {
+    width: 708px;
+    gap: 30px;
+  }
+
+  .services__loss-icon {
+    position: absolute;
+    right: 92px;
+    top: 81px;
+  }
+
+  .services__gain-icon {
+    position: absolute;
+    right: 28px;
+    top: 135px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .services__wrapper {
+    width: 1220px;
+    flex-direction: row;
+    gap: 80px;
+  }
+
+  .services__loss-icon {
+    position: static;
+  }
+
+  .services__gain-icon {
+    position: static;
+  }
 }

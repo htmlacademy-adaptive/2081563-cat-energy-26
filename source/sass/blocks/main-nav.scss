@@ -38,3 +38,39 @@
     display: block;
   }
 }
+
+@media (min-width: 768px) {
+  .main-nav {
+    background-color: transparent;
+  }
+
+  .main-nav__item {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .main-nav__wrapper {
+    display: block;
+  }
+
+  .main-nav__toogle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-nav__item--index {
+    color: #ffffff;
+  }
+
+  .main-nav__item {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
