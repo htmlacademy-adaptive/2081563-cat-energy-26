@@ -1,5 +1,7 @@
+@use "../global/variables.scss";
+
 .contacts {
-  background-color: #f2f2f2;
+  background-color: variables.$basic-grey;
   position: relative;
 }
 
@@ -23,11 +25,11 @@
 
 .contacts__address {
   line-height: 20px;
-  color: #444444;
+  color: variables.$dark-grey;
   font-style: normal;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: variables.$tablet-width) {
   .contacts__wrapper {
     width: 708px;
     padding: 26px 40px;
@@ -43,11 +45,11 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: variables.$desktop-width) {
   .contacts__wrapper {
     position: absolute;
     top: 95px;
     left: 110px;
-    background-color: #ffffff;
+    background-color: variables.$white;
   }
 }

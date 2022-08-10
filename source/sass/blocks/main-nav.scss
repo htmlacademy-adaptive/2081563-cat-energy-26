@@ -1,5 +1,7 @@
+@use "../global/variables.scss";
+
 .main-nav {
-  background-color: #ffffff;
+  background-color: variables.$white;
 }
 
 .main-nav__toogle {
@@ -23,7 +25,7 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
-  color: #000000;
+  color: variables.$black;
 }
 
 .main-nav__item-link {
@@ -39,7 +41,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: variables.$tablet-width) {
   .main-nav {
     background-color: transparent;
   }
@@ -63,9 +65,9 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: variables.$desktop-width) {
   .main-nav__item--index {
-    color: #ffffff;
+    color: variables.$white;
   }
 
   .main-nav__item {

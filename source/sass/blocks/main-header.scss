@@ -1,5 +1,7 @@
+@use "../global/variables.scss";
+
 .main-header {
-  background-color: #ffffff;
+  background-color: variables.$white;
   margin: 0 auto;
   width: 280px;
   z-index: 1;
@@ -13,14 +15,14 @@
   align-items: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: variables.$tablet-width) {
   .main-header {
     margin: 0 auto;
     width: 708px;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: variables.$desktop-width) {
   .main-header {
     margin: auto;
     position: absolute;

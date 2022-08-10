@@ -1,14 +1,16 @@
+@use "../global/variables.scss";
+
 .main-footer__logo-name {
   margin-bottom: 52px;
   display: block;
 }
 
 .main-footer__contacts--index {
-  background-color: #ffffff;
+  background-color: variables.$white;
 }
 
 .main-footer__social {
-  background-color: #f2f2f2;
+  background-color: variables.$basic-grey;
 }
 
 .main-footer__frame {
@@ -17,7 +19,7 @@
   height: 362px;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: variables.$tablet-width) {
   .main-footer__frame {
     height: 400px;
   }

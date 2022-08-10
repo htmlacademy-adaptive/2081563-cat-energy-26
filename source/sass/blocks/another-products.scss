@@ -1,3 +1,5 @@
+@use "../global/variables.scss";
+
 .another-products__title {
   margin: 0 0 36px;
 }
@@ -11,13 +13,13 @@
   gap: 32px;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: variables.$tablet-width) {
   .another-products__list {
     gap: 54px;
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: variables.$desktop-width) {
   .another-products__list {
     gap: 32px;
   }

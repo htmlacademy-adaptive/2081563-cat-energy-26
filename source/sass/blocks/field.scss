@@ -1,3 +1,5 @@
+@use "../global/variables.scss";
+
 .field {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -5,7 +7,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #444444;
+  color: variables.$dark-grey;
   display: flex;
   justify-content: space-between;
 }
@@ -14,7 +16,7 @@
   flex-grow: 1;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: variables.$tablet-width) {
   .field {
     font-size: 20px;
     line-height: 30px;

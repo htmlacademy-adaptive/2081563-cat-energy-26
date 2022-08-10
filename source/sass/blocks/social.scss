@@ -1,3 +1,5 @@
+@use "../global/variables.scss";
+
 .social {
   margin: 0 auto;
   width: 280px;
@@ -12,7 +14,7 @@
   display: flex;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: variables.$tablet-width) {
   .social {
     width: 708px;
     display: flex;
@@ -20,7 +22,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: variables.$desktop-width) {
   .social {
     width: 1220px;
   }

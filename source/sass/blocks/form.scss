@@ -1,3 +1,5 @@
+@use "../global/variables.scss";
+
 .form__questionnaire {
   margin-bottom: 45px;
 }
@@ -39,7 +41,7 @@
   line-height: 16px;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: variables.$tablet-width) {
   .form__submit-wrapper {
     display: flex;
     justify-content: space-between;
@@ -48,7 +50,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: variables.$desktop-width) {
   .form__list--contacts {
     display: flex;
     justify-content: space-between;

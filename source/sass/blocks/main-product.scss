@@ -1,3 +1,5 @@
+@use "../global/variables.scss";
+
 .main-product__image {
   display: block;
 }
@@ -21,13 +23,13 @@
 .main-product__description-title {
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  color: variables.$dark-grey;
 }
 
 .main-product__description-details {
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  color: variables.$dark-grey;
   margin: 0;
 }
 
@@ -36,9 +38,9 @@
   color: inherit;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: variables.$tablet-width) {
   .main-product {
-    background-color: #f2f2f2;
+    background-color: variables.$basic-grey;
   }
 
   .main-product__button {

@@ -1,6 +1,8 @@
+@use "../global/variables.scss";
+
 .promotion {
   background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/main/image-article.jpg");
-  color: #ffffff;
+  color: variables.$white;
 }
 
 .promotion__link {
@@ -10,14 +12,14 @@
   color: inherit;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: variables.$tablet-width) {
   .promotion__link {
     display: flex;
     justify-content: space-around;
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: variables.$desktop-width) {
   .promotion {
     position: absolute;
     right: 0;

@@ -1,5 +1,7 @@
+@use "../global/variables.scss";
+
 .services {
-  background-color: #ffffff;
+  background-color: variables.$white;
 }
 
 .services__wrapper {
@@ -16,7 +18,7 @@
   justify-content: flex-start;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: variables.$tablet-width) {
   .services__wrapper {
     width: 708px;
     gap: 30px;
@@ -35,7 +37,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: variables.$desktop-width) {
   .services__wrapper {
     width: 1220px;
     flex-direction: row;

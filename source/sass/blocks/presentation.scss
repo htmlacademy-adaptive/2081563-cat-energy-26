@@ -1,3 +1,5 @@
+@use "../global/variables.scss";
+
 .presentation {
   background-color: #eaeaea;
 }
@@ -51,7 +53,7 @@
   line-height: 20px;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: variables.$tablet-width) {
   .presentation {
     background-image: linear-gradient(360deg, #eaeaea 462px, #ffffff 462px);
   }
@@ -87,7 +89,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: variables.$desktop-width) {
   .presentation__wrapper {
     width: 1220px;
     display: flex;

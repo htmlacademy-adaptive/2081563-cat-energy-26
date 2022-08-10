@@ -1,8 +1,10 @@
+@use "../global/variables.scss";
+
 .button {
   text-decoration: none;
-  color: #ffffff;
+  color: variables.$white;
   cursor: pointer;
-  background-color: #68b738;
+  background-color: variables.$basic-green;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -17,7 +19,7 @@
   border: none;
 
   &--more {
-    background-color: #f2f2f2;
-    color: #444444;
+    background-color: variables.$basic-grey;
+    color: variables.$dark-grey;
   }
 }
