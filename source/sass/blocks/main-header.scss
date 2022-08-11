@@ -2,23 +2,34 @@
 
 .main-header {
   background-color: variables.$white;
-  margin: 0 auto;
-  width: 280px;
   z-index: 1;
 }
 
-.main-header__wrapper {
-  margin-top: 10px;
-  margin-bottom: 17px;
+.main-header__wrapper-links {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 8px 20px 15px;
 }
 
 @media (min-width: variables.$tablet-width) {
   .main-header {
-    margin: 0 auto;
-    width: 708px;
+    margin: 0 30px;
+  }
+
+  .main-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+  }
+
+  .main-header__wrapper-links {
+    padding: 0;
+  }
+
+  .main-header__cat-image {
+    margin-right: 12px;
   }
 }
 
@@ -26,10 +37,14 @@
   .main-header {
     margin: auto;
     position: absolute;
-    width: 1220px;
+    max-width: 1220px;
     background-color: transparent;
     top: 0;
     left: 0;
     right: 0;
+  }
+
+  .main-header__cat-image {
+    margin-right: 14px;
   }
 }

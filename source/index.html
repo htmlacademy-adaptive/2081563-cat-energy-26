@@ -18,27 +18,26 @@
       <img class="main-header__name-image" src="img/header/logo-name.svg" width="101" height="18"
         alt="Магазин Cat Energy">
     </a>
+    <button class="main-nav__toogle main-nav__toogle--nojs" type="button">
+      <span class="visually-hidden">Открыть меню.</span>
+      <svg class="toogle-burger" aria-hidden="true" focusable="false" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#000" stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24"/></svg>
+    </button>
   </div>
     <nav class="main-nav">
-      <button class="main-nav__toogle" type="button">
-        <span class="visually-hidden">Открыть меню.</span>
-        <svg class="toogle-burger" aria-hidden="true" focusable="false" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#000" stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24"/></svg>
-      </button>
-      <!-- Класс main-nav__wrapper--open отображает меню -->
-      <div class="main-nav__wrapper">
+      <div class="main-nav__wrapper main-nav__wrapper--closed">
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--index main-nav__item--current">
-            <a class="main-nav__item-link">
+          <li class="main-nav__item">
+            <a class="main-nav__item-link main-nav__item-link--index main-nav__item-link--active">
               главная
             </a>
           </li>
-          <li class="main-nav__item main-nav__item--index">
-            <a class="main-nav__item-link" href="catalog.html">
+          <li class="main-nav__item">
+            <a class="main-nav__item-link main-nav__item-link--index" href="catalog.html">
               каталог продукции
             </a>
           </li>
-          <li class="main-nav__item main-nav__item--index">
-            <a class="main-nav__item-link" href="form.html">
+          <li class="main-nav__item">
+            <a class="main-nav__item-link main-nav__item-link--index" href="form.html">
               подбор программы
             </a>
           </li>
@@ -237,6 +236,7 @@
     </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

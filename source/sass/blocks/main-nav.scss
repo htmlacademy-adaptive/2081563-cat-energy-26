@@ -17,39 +17,53 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  background-color: variables.$white;
 }
 
-.main-nav__item {
+.main-nav__item-link {
+  text-decoration: none;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 20px;
+  line-height: 1;
   color: variables.$black;
+  padding: 22px 0 24px;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  position: relative;
 }
 
-.main-nav__item-link {
-  color: inherit;
-  text-decoration: none;
+
+.main-nav__toogle--nojs {
+  visibility: hidden;
 }
 
-.main-nav__wrapper {
-  display: none;
+@media (max-width: variables.$mobile-width-only) {
+  .main-nav__item-link {
+    border-bottom: 1px solid #e6e6e6;
+  }
 
-  &--open {
-    display: block;
+  .main-nav__item:first-child .main-nav__item-link {
+    border-top: 1px solid #e6e6e6;
+  }
+
+  .main-nav__wrapper--open .main-nav__list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  .main-nav__wrapper--closed .main-nav__list {
+    display: none;
   }
 }
 
 @media (min-width: variables.$tablet-width) {
   .main-nav {
     background-color: transparent;
-  }
-
-  .main-nav__item {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
   }
 
   .main-nav__wrapper {
@@ -62,15 +76,47 @@
 
   .main-nav__list {
     display: flex;
+    gap: 35px;
+  }
+
+  .main-nav__item-link {
+    padding: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .main-nav__item-link--active::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    background-color: variables.$basic-green;
   }
 }
 
 @media (min-width: variables.$desktop-width) {
-  .main-nav__item--index {
+  .main-nav__item-link--index {
     color: variables.$white;
   }
 
-  .main-nav__item {
+  .main-nav__item:first-child .main-nav__item-link--index::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    background-color: variables.$white;
+  }
+
+  .main-nav__list {
+    background-color: transparent;
+  }
+
+  .main-nav__item-link {
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
