@@ -22,4 +22,12 @@
     background-color: variables.$basic-grey;
     color: variables.$dark-grey;
   }
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgb(255, 255, 255, 0.3);
+  }
 }

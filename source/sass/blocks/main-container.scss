@@ -1,7 +1,21 @@
+@use "../global/variables.scss";
+
 .main-container__offer {
   margin-bottom: 20px;
 }
 
 .main-container__advantages {
   margin-bottom: 49px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .main-container__offer {
+    margin: 0;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .main-container__offer {
+    margin-bottom: 82px;
+  }
 }

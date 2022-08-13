@@ -29,7 +29,6 @@
   line-height: 1;
   color: variables.$black;
   padding: 22px 0 24px;
-  text-align: center;
   text-transform: uppercase;
   display: block;
   position: relative;
@@ -84,6 +83,14 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .main-nav__item-link--active::after {
@@ -100,6 +107,14 @@
 @media (min-width: variables.$desktop-width) {
   .main-nav__item-link--index {
     color: variables.$white;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .main-nav__item:first-child .main-nav__item-link--index::after {
