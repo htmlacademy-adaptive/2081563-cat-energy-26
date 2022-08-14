@@ -1,23 +1,17 @@
 @use "../global/variables.scss";
 
-.slider__range-wrapper {
-  display: flex;
-  justify-content: space-around;
+.slider {
+  margin: 0 auto;
 }
 
-.slider__description {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
+.slider__button {
+  display: block;
+  margin: 0 auto;
 }
 
 @media (min-width: variables.$tablet-width) {
-  .slider__description {
-    font-size: 20px;
-    line-height: 30px;
+  .slider {
+    height: 512px;
   }
 }
 

@@ -5,22 +5,16 @@
 }
 
 .services__wrapper {
-  margin: 0 auto;
-  width: 280px;
+  margin: 0 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-.services-item__wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  margin-bottom: 20px;
 }
 
 @media (min-width: variables.$tablet-width) {
   .services__wrapper {
-    width: 708px;
+    margin: 0 30px 45px;
     gap: 30px;
   }
 
@@ -39,6 +33,7 @@
 
 @media (min-width: variables.$desktop-width) {
   .services__wrapper {
+    margin: 0 auto 71px;
     width: 1220px;
     flex-direction: row;
     gap: 80px;

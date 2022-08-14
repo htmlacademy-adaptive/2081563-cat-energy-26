@@ -5,27 +5,37 @@
 }
 
 .presentation__wrapper {
-  margin: 0 auto;
-  width: 280px;
+  margin: 0 20px;
   padding-top: 25px;
   padding-bottom: 40px;
 }
 
+.presentation__list-total-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 34px;
+  column-gap: 32px;
+  margin-bottom: 20px;
+}
+
 .presentation__title {
-  margin: 0;
-  margin-bottom: 40px;
+  margin: 0 0 40px;
 }
 
 .presentation__description {
   color: #444444;
-  margin: 0;
+  margin: 0 0 20px;
 }
 
 .presentation__list {
-  margin: 0 0 20px;
-  display: grid;
-  grid-template-columns: repeat(2, 124px);
-  column-gap: 32px;
+  margin: 0;
+  position: relative;
+  align-self: center;
+  justify-self: center;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  width: 124px;
+  height: 56px;
 }
 
 .presentation__description-details {
@@ -33,48 +43,76 @@
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  line-height: 24px;
-  grid-row: 1 / 2;
+  line-height: 55px;
   margin: 0;
+  text-align: center;
 }
 
 .presentation__description-title {
   font-size: 12px;
   line-height: 100%;
   color: #444444;
+  text-align: center;
+  position: absolute;
+  bottom: -19px;
+  left: 25%;
+  right: 25%;
+  background-color: #eaeaea;
+  padding: 5px;
 }
 
 .presentation__total {
-  margin: 0 0 40px;
+  margin: 0;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  grid-column: 1/3;
+  justify-self: center;
+
+  & br {
+    display: none;
+  }
 }
 
 @media (min-width: variables.$tablet-width) {
   .presentation {
+    border-top: 1px solid #e6e6e6;
     background-image: linear-gradient(360deg, #eaeaea 462px, #ffffff 462px);
   }
 
   .presentation__wrapper {
-    width: 708px;
+    margin: 0 30px;
+    padding-top: 43px;
+  }
+
+  .presentation__title {
+    margin-bottom: 63px;
   }
 
   .presentation__description {
+    margin-bottom: 54px;
     font-size: 16px;
     line-height: 24px;
   }
 
   .presentation__list-total-wrapper {
     display: flex;
-    justify-content: space-between;
+    gap: 0;
+  }
+
+  .presentation__list {
+    width: 162px;
+    height: 77px;
+
+    &:not(.presentation__list + .presentation__list) {
+      margin-right: 42px;
+    }
   }
 
   .presentation__description-details {
     font-size: 30px;
-    line-height: 37px;
   }
 
   .presentation__description-title {
@@ -86,6 +124,11 @@
     font-size: 20px;
     line-height: 20px;
     text-align: right;
+    margin-left: 167px;
+
+    & br {
+      display: block;
+    }
   }
 }
 

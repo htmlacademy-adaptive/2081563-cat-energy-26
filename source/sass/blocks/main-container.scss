@@ -12,10 +12,18 @@
   .main-container__offer {
     margin: 0;
   }
+
+  .main-container__advantages {
+    margin-bottom: 104px;
+  }
 }
 
 @media (min-width: variables.$desktop-width) {
   .main-container__offer {
     margin-bottom: 82px;
+  }
+
+  .main-container__advantages {
+    margin-bottom: 126px;
   }
 }
