@@ -42,6 +42,7 @@
 @media (max-width: variables.$mobile-width-only) {
   .main-nav__item-link {
     border-bottom: 1px solid #e6e6e6;
+    text-align: center;
   }
 
   .main-nav__item:first-child .main-nav__item-link {

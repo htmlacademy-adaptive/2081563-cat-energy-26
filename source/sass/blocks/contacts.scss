@@ -6,8 +6,7 @@
 }
 
 .contacts__wrapper {
-  margin: 0 auto;
-  width: 280px;
+  margin: 0 20px;
   padding: 26px 0;
   display: flex;
   justify-content: space-between;
@@ -31,7 +30,7 @@
 
 @media (min-width: variables.$tablet-width) {
   .contacts__wrapper {
-    width: 708px;
+    margin: 0 30px;
     padding: 26px 40px;
   }
 
@@ -48,8 +47,27 @@
 @media (min-width: variables.$desktop-width) {
   .contacts__wrapper {
     position: absolute;
+    width: 565px;
     top: 95px;
     left: 110px;
     background-color: variables.$white;
+    padding: 56px 80px;
+    margin: 0;
+    justify-content: flex-start;
+    gap: 87px;
+    box-sizing: border-box;
+  }
+
+  .contacts__slogan {
+    width: 163px;
+  }
+
+  .contacts__address {
+    width: 155px;
+  }
+
+  .contacts__city {
+    display: block;
+    margin-top: 19px;
   }
 }

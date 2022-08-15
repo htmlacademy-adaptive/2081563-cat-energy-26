@@ -10,11 +10,14 @@
   padding-bottom: 40px;
 }
 
+.presentation__list-wrapper {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 34px;
+  justify-content: center;
+}
+
 .presentation__list-total-wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  row-gap: 34px;
-  column-gap: 32px;
   margin-bottom: 20px;
 }
 
@@ -68,8 +71,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  grid-column: 1/3;
-  justify-self: center;
+  text-align: center;
 
   & br {
     display: none;
@@ -79,12 +81,13 @@
 @media (min-width: variables.$tablet-width) {
   .presentation {
     border-top: 1px solid #e6e6e6;
-    background-image: linear-gradient(360deg, #eaeaea 462px, #ffffff 462px);
+    background-image: linear-gradient(360deg, variables.$basic-grey 462px, variables.$white 462px);
   }
 
   .presentation__wrapper {
     margin: 0 30px;
     padding-top: 43px;
+    padding-bottom: 101px;
   }
 
   .presentation__title {
@@ -97,18 +100,19 @@
     line-height: 24px;
   }
 
+  .presentation__list-wrapper {
+    gap: 42px;
+  }
+
   .presentation__list-total-wrapper {
     display: flex;
-    gap: 0;
+    justify-content: space-between;
+    margin-bottom: 104px;
   }
 
   .presentation__list {
     width: 162px;
     height: 77px;
-
-    &:not(.presentation__list + .presentation__list) {
-      margin-right: 42px;
-    }
   }
 
   .presentation__description-details {
@@ -118,32 +122,71 @@
   .presentation__description-title {
     font-size: 14px;
     line-height: 14px;
+    background-color: variables.$white;
+
+    br {
+      display: none;
+    }
   }
 
   .presentation__total {
     font-size: 20px;
     line-height: 20px;
     text-align: right;
-    margin-left: 167px;
 
     & br {
       display: block;
     }
   }
+
+  .presentation__slider {
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: variables.$desktop-width) {
+  .presentation {
+    border: none;
+  }
+
   .presentation__wrapper {
     width: 1220px;
     display: flex;
-    gap: 193px;
+    margin: 0 auto;
+    padding-bottom: 75px;
+  }
+
+  .presentation__wrapper-desktop {
+    margin-right: 224px;
+  }
+
+  .presentation__title {
+    margin-bottom: 146px;
+  }
+
+  .presentation__description {
+    margin-bottom: 69px;
+    width: 436px;
+  }
+
+  .presentation__description-title {
+    background-color: variables.$basic-grey;
+  }
+
+  .presentation__list-wrapper {
+    margin-bottom: 60px;
   }
 
   .presentation__list-total-wrapper {
     display: block;
+    margin: 0;
   }
 
   .presentation__total {
     text-align: left;
+
+    br {
+      display: none;
+    }
   }
 }

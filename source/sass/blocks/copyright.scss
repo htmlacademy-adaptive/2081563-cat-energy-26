@@ -6,8 +6,30 @@
   line-height: 18px;
   color: variables.$dark-grey;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:hover {
+    .copyright__logo {
+      fill: variables.$basic-green;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    .copyright__logo {
+      fill: variables.$basic-green;
+    }
+  }
 }
 
 .copyright__text {
   margin: 0;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .copyright__text {
+    margin-right: 22px;
+  }
 }

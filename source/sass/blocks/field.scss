@@ -10,15 +10,45 @@
   color: variables.$dark-grey;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .field__input {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
   flex-grow: 1;
+  box-sizing: border-box;
+  height: 45px;
+  padding-left: 16px;
+  text-transform: uppercase;
+  border: 1px solid #e7e7e7;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+  }
+
+  &--error {
+    border: 2px solid #ff8282;
+  }
 }
 
 @media (min-width: variables.$tablet-width) {
   .field {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .field__input {
+    font-size: 20px;
+    line-height: 30px;
+    height: 52px;
+    padding-left: 19px;
   }
 }
