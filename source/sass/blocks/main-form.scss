@@ -21,6 +21,10 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+
+  br {
+    display: none;
+  }
 }
 
 @media (max-width: variables.$mobile-width-only) {
@@ -49,6 +53,18 @@
 
 @media (min-width: variables.$desktop-width) {
   .main-form__container {
-    width: 1220px;
+    padding-top: 187px;
+  }
+
+  .main-form__title {
+    margin: 0 0 56px 110px;
+  }
+
+  .main-form__description {
+    margin: 0 0 66px 110px;
+
+    br {
+      display: block;
+    }
   }
 }

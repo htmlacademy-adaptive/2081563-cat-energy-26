@@ -1,7 +1,7 @@
 @use "../global/variables.scss";
 
 .form__questionnaire {
-  margin-bottom: 45px;
+  margin-bottom: 26px;
 }
 
 .form__contacts {
@@ -36,10 +36,18 @@
 .form__list--radio {
   padding: 22px 20px 19px;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 .form__list--contacts {
-  margin-bottom: 23.5px;
+  border: none;
+  margin: 0;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
 .form__submit {
@@ -76,6 +84,28 @@
   .form__list--questionnaire {
     margin: 0 67px 72px 71px;
     padding: 0;
+    gap: 20px;
+  }
+
+  .form__list--radio {
+    margin: 0 69px;
+    padding: 30px 28px;
+    gap: 23px;
+    border: 1px solid #e7e7e7;
+    box-sizing: border-box;
+  }
+
+  .form__questionnaire {
+    margin-bottom: 75px;
+  }
+
+  .form__contacts {
+    margin-bottom: 65px;
+  }
+
+  .form__list--contacts {
+    gap: 20px;
+    padding: 0 30px;
   }
 }
 
@@ -88,5 +118,15 @@
   .form__submit-wrapper {
     justify-content: flex-start;
     width: 1220px;
+  }
+
+  .form__list--questionnaire {
+    margin: 0;
+    flex-grow: 1;
+  }
+
+  .form__list--radio {
+    margin: 0;
+    flex-grow: 1;
   }
 }
