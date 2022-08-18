@@ -1,22 +1,77 @@
 @use "../global/variables.scss";
 
 .extra__title {
-  margin: 0 0 34px;
+  padding: 0 20px;
+  margin-bottom: 34px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: variables.$basic-green;
+    right: 0;
+    left: 184px;
+    top: 50%;
+  }
+}
+
+.extra__list {
+  border: none;
+  display: grid;
+  gap: 25px;
+  margin: 0 20px;
+  padding: 0;
 }
 
 @media (min-width: variables.$tablet-width) {
+  .extra__title {
+    padding: 0 69px;
+    margin: 0 0 62px;
+
+    &::after {
+      top: 50%;
+      left: 322px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background-color: variables.$basic-green;
+    }
+  }
+
   .extra__list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 523px;
-    margin: 0 auto;
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 124px;
+    row-gap: 42px;
+    margin: 0 70px;
   }
 }
 
 @media (min-width: variables.$desktop-width) {
+  .extra__title {
+    padding: 0 110px;
+    margin-bottom: 62px;
+
+    &::after {
+      top: 50%;
+      left: 362px;
+    }
+
+    &::before {
+      width: 40px;
+    }
+  }
+
   .extra__list {
     display: flex;
-    justify-content: space-between;
-    width: 1220px;
+    gap: 104px;
+    margin: 0 110px;
   }
 }

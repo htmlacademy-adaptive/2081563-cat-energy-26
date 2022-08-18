@@ -1,4 +1,5 @@
 @use "../global/variables.scss";
+@use "../global/mixins.scss";
 
 .products__list {
   margin: 0;
@@ -7,9 +8,13 @@
 }
 
 @media (min-width: variables.$tablet-width) {
+  .products__wrapper {
+    @include mixins.container-tablet;
+  }
+
   .products__list {
     display: grid;
-    grid-template-columns: repeat(2, 324px);
+    grid-template-columns: repeat(2, 1fr);
     gap: 60px;
   }
 }

@@ -5,6 +5,10 @@
   display: block;
 }
 
+.main-footer__contacts {
+  background-color: variables.$basic-grey;
+}
+
 .main-footer__contacts--index {
   background-color: variables.$white;
 }
@@ -22,5 +26,11 @@
 @media (min-width: variables.$tablet-width) {
   .main-footer__frame {
     height: 400px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .main-footer__contacts {
+    background-color: variables.$white;
   }
 }

@@ -56,6 +56,11 @@
     z-index: 1;
   }
 
+  .main-nav__wrapper--nojs .main-nav__list {
+    position: static;
+    display: block;
+  }
+
   .main-nav__wrapper--closed .main-nav__list {
     display: none;
   }

@@ -1,21 +1,25 @@
 @use "../global/variables.scss";
+@use "../global/mixins.scss";
 
 .main-form__container {
   padding-top: 27px;
+  padding-bottom: 32px;
   position: relative;
 }
 
 .main-form__title {
+  @include mixins.container-mobile;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  margin: 0 20px 37px;
+  margin: 0 0 54px;
 }
 
 .main-form__description {
-  margin: 0 20px 39px;
+  @include mixins.container-mobile;
+  margin: 0 0 39px;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -36,6 +40,7 @@
 @media (min-width: variables.$tablet-width) {
   .main-form__container {
     padding-top: 64px;
+    padding-bottom: 72px;
   }
 
   .main-form__title {
@@ -54,6 +59,7 @@
 @media (min-width: variables.$desktop-width) {
   .main-form__container {
     padding-top: 187px;
+    padding-bottom: 82px;
   }
 
   .main-form__title {

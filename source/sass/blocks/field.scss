@@ -97,3 +97,9 @@
     padding-left: 19px;
   }
 }
+
+@media (min-width: variables.$desktop-width) {
+  .field {
+    flex-grow: 1;
+  }
+}

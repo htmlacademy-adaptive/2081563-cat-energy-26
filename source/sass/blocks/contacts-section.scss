@@ -40,3 +40,18 @@
     }
   }
 }
+
+@media (min-width: variables.$desktop-width) {
+  .contacts-section__title {
+    padding: 0 110px;
+    margin-bottom: 76px;
+
+    &::before {
+      width: 70px;
+    }
+
+    &::after {
+      left: 662px;
+    }
+  }
+}
