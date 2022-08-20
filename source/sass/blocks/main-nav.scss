@@ -49,20 +49,24 @@
     border-top: 1px solid #e6e6e6;
   }
 
-  .main-nav__wrapper--open .main-nav__list {
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: 1;
+  .has-js {
+    .main-nav__wrapper--open {
+      .main-nav__list {
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 1;
+      }
+    }
+
+    .main-nav__wrapper--closed .main-nav__list {
+      display: none;
+    }
   }
 
-  .main-nav__wrapper--nojs .main-nav__list {
+  .main-nav__list {
     position: static;
     display: block;
-  }
-
-  .main-nav__wrapper--closed .main-nav__list {
-    display: none;
   }
 }
 

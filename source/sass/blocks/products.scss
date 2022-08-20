@@ -21,7 +21,7 @@
 
 @media (min-width: variables.$desktop-width) {
   .products__list {
-    grid-template-columns: repeat(4, 245px);
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 80px;
     row-gap: 63px;
   }

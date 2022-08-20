@@ -170,6 +170,7 @@
 
   .presentation__list-wrapper {
     margin-bottom: 60px;
+    justify-content: flex-start;
   }
 
   .presentation__list-total-wrapper {
@@ -179,5 +180,13 @@
 
   .presentation__total {
     text-align: left;
+
+    &-price {
+      margin-left: 63px;
+    }
+
+    br {
+      display: none;
+    }
   }
 }

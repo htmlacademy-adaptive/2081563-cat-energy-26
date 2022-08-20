@@ -16,17 +16,27 @@
   display: block;
   border: none;
 
-  &--more {
-    background-color: variables.$basic-grey;
-    color: variables.$dark-grey;
-  }
-
   &:hover {
     background-color: #5eaa2f;
   }
 
   &:active {
     color: rgb(255, 255, 255, 0.3);
+  }
+}
+
+.button--more {
+  width: 100%;
+  background-color: variables.$basic-grey;
+  color: variables.$dark-grey;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: rgb(68, 68, 68, 0.3);
   }
 }
 

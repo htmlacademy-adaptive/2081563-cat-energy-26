@@ -14,3 +14,7 @@ navToggle.addEventListener('click', function () {
     navMain.classList.remove('main-nav__wrapper--open');
   }
 });
+
+window.addEventListener('load', () => {
+  document.documentElement.classList.add('has-js')
+})

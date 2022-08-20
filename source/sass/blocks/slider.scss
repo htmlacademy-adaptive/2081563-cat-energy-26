@@ -78,12 +78,29 @@
 @media (min-width: variables.$tablet-width) {
   .slider {
     height: 512px;
+    width: 560px;
+  }
+
+  .slider__after {
+    background-image: linear-gradient(360deg, variables.$basic-grey 361px, variables.$white 361px);
+  }
+
+  .slider__before {
+    background-image: linear-gradient(360deg, variables.$basic-grey 361px, variables.$white 361px);
   }
 }
 
 @media (min-width: variables.$desktop-width) {
   .slider {
-    width: 592px;
+    width: 560px;
     flex-shrink: 0;
+  }
+
+  .slider__after {
+    background-image: linear-gradient(360deg, variables.$basic-grey 387px, variables.$white 387px);
+  }
+
+  .slider__before {
+    background-image: linear-gradient(360deg, variables.$basic-grey 387px, variables.$white 387px);
   }
 }
