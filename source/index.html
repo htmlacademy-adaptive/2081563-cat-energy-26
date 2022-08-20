@@ -166,15 +166,19 @@
       </div>
     </div>
         <div class="presentation__slider slider">
-          <img class="slider__image slider__image--current" src="img/main/before-mobile1.png" width="280" height="232"
+          <div class="slider__after">
+            <img class="slider__image" src="img/main/slider-after.png" alt="Кот, после.">
+            </div>
+          <div class="slider__before">
+          <img class="slider__image slider__image--current" src="img/main/slider-before.png"
             alt="Кот, до.">
-          <!-- <img class="slider__image" src="img/main/after-mobile 1.png" width="243"
-            height="232" alt="Кот, после."> -->
-          <div class="slider__range">
-            <button class="slider__button" type="button">
-              <span class="visually-hidden">Смена состояния.</span>
-            </button>
           </div>
+            <button class="slider__button" type="button">
+              <span class="visually-hidden">Скроллер слайдера.</span>
+              <span class="slider__button-scroller">
+                <svg width="24" height="18" viewBox="0 0 24 18" fill="#666" xmlns="http://www.w3.org/2000/svg"><path d="M8 0 0 9l8 9V0ZM24 9l-8-9v18l8-9Z"/></svg>
+              </span>
+            </button>
         </div>
       </div>
     </section>
