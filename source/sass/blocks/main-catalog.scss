@@ -1,25 +1,27 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
 .main-catalog__wrapper {
-  margin: 0 auto;
-  width: 280px;
   padding-top: 27px;
   position: relative;
 }
 
 .main-catalog__title {
-  font-family: "Oswald", sans-serif;
+  @include mixins.container-mobile;
+  @include mixins.custom-font;
+  margin: 0 0 41px;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  margin: 0 0 41px;
 }
 
 .main-catalog__products {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 .main-catalog__another-products {
-  margin-bottom: 54px;
+  margin-bottom: 35px;
   position: relative;
 }
 
@@ -27,23 +29,44 @@
   margin-bottom: 35px;
 }
 
-@media (min-width: $tablet-width) {
+@media (max-width: variables.$mobile-width-only) {
   .main-catalog__wrapper {
-    width: 707px;
-  }
-
-  .main-catalog__title {
-    font-size: 60px;
-    line-height: 60px;
+    border-top: 1px solid #ebebeb;
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: variables.$tablet-width) {
+  .main-catalog__title {
+    @include mixins.container-tablet;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .main-catalog__another-products {
+    margin-bottom: 69px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
   .main-catalog__wrapper {
-    width: 1220px;
+    padding-top: 188px;
+  }
+
+  .main-catalog__title {
+    @include mixins.container-desktop;
+    margin-bottom: 84px;
   }
 
   .main-catalog__promotion {
     margin: 0;
+  }
+
+  .main-catalog__products {
+    @include mixins.container-desktop;
+    margin-bottom: 75px;
+  }
+
+  .main-catalog__another-products {
+    margin-bottom: 86px;
   }
 }

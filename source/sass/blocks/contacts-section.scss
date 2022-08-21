@@ -1,3 +1,57 @@
+@use "../global/variables.scss";
+
 .contacts-section__title {
   margin: 0 0 35px;
+  padding: 0 113px 0 20px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: variables.$basic-green;
+    right: 0;
+    left: 221px;
+  }
+}
+
+@media (min-width: variables.$tablet-width) {
+  .contacts-section__title {
+    margin: 0 0 76px;
+    padding: 0 183px 0 69px;
+
+    br {
+      display: none;
+    }
+
+    &::after {
+      top: 50%;
+      left: 623px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background-color: variables.$basic-green;
+    }
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .contacts-section__title {
+    padding: 0 110px;
+    margin-bottom: 76px;
+
+    &::before {
+      width: 70px;
+    }
+
+    &::after {
+      left: 662px;
+    }
+  }
 }

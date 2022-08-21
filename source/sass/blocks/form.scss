@@ -1,5 +1,8 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
 .form__questionnaire {
-  margin-bottom: 45px;
+  margin-bottom: 26px;
 }
 
 .form__contacts {
@@ -11,27 +14,55 @@
 }
 
 .form__extra {
-  margin-bottom: 34px;
+  margin-bottom: 41px;
 }
 
-.form__list:not(:last-child) {
-  margin-bottom: 19px;
+.form__list {
+  border: none;
+  padding: 0;
+}
+
+.field__label {
+  margin-right: 13px;
+  white-space: nowrap;
 }
 
 .form__list--questionnaire {
-  margin-bottom: 27px;
+  padding: 0 20px 27px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form__list--radio {
+  padding: 22px 20px 19px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 .form__list--contacts {
-  margin-bottom: 23.5px;
+  border: none;
+  margin: 0;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form__submit-wrapper {
+  @include mixins.container-mobile;
 }
 
 .form__submit {
   margin-bottom: 21px;
+  width: 100%;
 }
 
 .form__legend {
   margin: 0;
+  text-align: center;
 }
 
 .form__small {
@@ -39,23 +70,107 @@
   line-height: 16px;
 }
 
-@media (min-width: $tablet-width) {
-  .form__submit-wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 523px;
-    margin: 0 auto;
+@media (max-width: variables.$mobile-width-only) {
+  .form__list--radio {
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  .form__list--questionnaire {
+    border-bottom: 1px solid #d9d9d9;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .form__list--contacts {
+@media (min-width: variables.$tablet-width) {
+  .form__submit-wrapper {
+    @include mixins.container-tablet-form;
     display: flex;
+    align-items: center;
+    gap: 61px;
+  }
+
+  .form__submit {
+    min-width: 282px;
+    width: 282px;
+    padding: 7px 0;
+    margin: 0;
+  }
+
+  .form__small {
+    font-size: 16px;
+  }
+
+  .form__list--questionnaire {
+    margin: 0 67px 72px 71px;
+    padding: 0;
+    gap: 20px;
+  }
+
+  .form__list--radio {
+    margin: 0 69px;
+    padding: 30px 28px;
+    gap: 23px;
+    border: 1px solid #e7e7e7;
+    box-sizing: border-box;
+  }
+
+  .form__questionnaire {
+    margin-bottom: 75px;
+  }
+
+  .form__contacts {
+    margin-bottom: 65px;
+  }
+
+  .form__list--contacts {
+    gap: 20px;
+    padding: 0 30px;
+  }
+
+  .form__comment {
+    margin-bottom: 65px;
+  }
+
+  .form__extra {
+    margin-bottom: 59px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .form__list--contacts {
+    flex-direction: row;
     justify-content: space-between;
+    padding: 0 110px;
+    gap: 78px;
   }
 
   .form__submit-wrapper {
-    justify-content: flex-start;
-    width: 1220px;
+    @include mixins.container-desktop;
+    gap: 89px;
+  }
+
+  .form__submit {
+    width: 568px;
+  }
+
+  .form__list--questionnaire {
+    margin: 0;
+    flex-grow: 1;
+  }
+
+  .form__list--radio {
+    margin: 0;
+    flex-grow: 1;
+  }
+
+  .form__contacts {
+    margin-bottom: 69px;
+  }
+
+  .form__comment {
+    margin-bottom: 67px;
+  }
+
+  .form__extra {
+    margin-bottom: 66px;
   }
 }

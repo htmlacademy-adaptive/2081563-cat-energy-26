@@ -1,3 +1,5 @@
+@use "../global/variables.scss";
+
 .field {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -5,18 +7,99 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #444444;
+  color: variables.$dark-grey;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .field__input {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
   flex-grow: 1;
+  box-sizing: border-box;
+  height: 45px;
+  padding-left: 16px;
+  text-transform: uppercase;
+  outline: 1px solid #e7e7e7;
+  border: none;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+/* stylelint-disable */
+  &:focus {
+    outline: 2px solid #444444;
+
+    & + .field__input--tel-icon {
+      g {
+        fill: variables.$basic-green;
+      }
+    }
+    & + .field__input--email-icon {
+      path {
+        stroke: variables.$basic-green;
+      }
+    }
+  }
+
+  &--error {
+    outline: 2px solid #ff8282;
+
+    & + .field__input--tel-icon {
+      g {
+        fill: #ff8282;
+      }
+    }
+
+    & + .field__input--email-icon {
+      path {
+        stroke: #ff8282;
+      }
+    }
+  }
+}
+/* stylelint-enable */
+
+.field--contacts .field__input {
+  padding-right: 39px;
 }
 
-@media (min-width: $tablet-width) {
+.field--contacts {
+  position: relative;
+}
+
+.field__input--email-icon {
+  position: absolute;
+  right: 16px;
+  top: 16.5px;
+}
+
+.field__input--tel-icon {
+  position: absolute;
+  right: 13px;
+  top: 13px;
+}
+
+@media (min-width: variables.$tablet-width) {
   .field {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .field__input {
+    font-size: 20px;
+    line-height: 30px;
+    height: 52px;
+    padding-left: 19px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .field {
+    flex-grow: 1;
   }
 }

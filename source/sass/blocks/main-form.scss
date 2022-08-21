@@ -1,44 +1,76 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
 .main-form__container {
-  margin: 0 auto 32px;
-  width: 280px;
+  padding-top: 27px;
+  padding-bottom: 32px;
+  position: relative;
 }
 
 .main-form__title {
+  @include mixins.container-mobile;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  margin-bottom: 37px;
+  margin: 0 0 54px;
 }
 
 .main-form__description {
+  @include mixins.container-mobile;
   margin: 0 0 39px;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+
+  br {
+    display: none;
+  }
 }
 
-@media (min-width: $tablet-width) {
+@media (max-width: variables.$mobile-width-only) {
+  .main-form {
+    border-top: 1px solid #d9d9d9;
+  }
+}
+
+@media (min-width: variables.$tablet-width) {
   .main-form__container {
-    width: 708px;
+    padding-top: 64px;
+    padding-bottom: 72px;
   }
 
   .main-form__title {
+    margin: 0 70px 54px;
     font-size: 60px;
     line-height: 60px;
   }
 
   .main-form__description {
+    margin: 0 70px 66px;
     font-size: 20px;
     line-height: 30px;
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: variables.$desktop-width) {
   .main-form__container {
-    width: 1220px;
+    padding-top: 187px;
+    padding-bottom: 82px;
+  }
+
+  .main-form__title {
+    margin: 0 0 56px 110px;
+  }
+
+  .main-form__description {
+    margin: 0 0 66px 110px;
+
+    br {
+      display: block;
+    }
   }
 }

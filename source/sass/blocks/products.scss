@@ -1,21 +1,32 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
 .products__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: variables.$tablet-width) {
+  .products__wrapper {
+    @include mixins.container-tablet;
+  }
+
   .products__list {
     display: grid;
-    grid-template-columns: repeat(2, 324px);
+    grid-template-columns: repeat(2, 1fr);
     gap: 60px;
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: variables.$desktop-width) {
   .products__list {
-    grid-template-columns: repeat(4, 245px);
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 80px;
     row-gap: 63px;
+  }
+
+  .products__wrapper {
+    padding: 0;
   }
 }

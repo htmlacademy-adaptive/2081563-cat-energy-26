@@ -1,3 +1,5 @@
+@use "../global/variables.scss";
+
 .offer {
   background-image: linear-gradient(rgba(104, 183, 56, 0.85) 302px, #ffffff 302px), url("../img/main/index-background-desktop2.jpg");
   background-repeat: no-repeat;
@@ -6,8 +8,7 @@
 }
 
 .offer__wrapper {
-  margin: 0 auto;
-  width: 280px;
+  margin: 0 20px;
   padding-top: 27px;
   position: relative;
 }
@@ -17,7 +18,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 1;
   text-align: center;
   margin: 0 0 25px;
 }
@@ -38,47 +39,88 @@
   margin: 0 auto 3px;
 }
 
-@media (min-width: 768px) {
+.offer__to-catalog {
+  width: 100%;
+  min-width: 280px;
+}
+
+@media (min-width: variables.$tablet-width) {
   .offer {
     background-image: none;
   }
 
   .offer__wrapper {
-    margin: 0 auto;
-    width: 709px;
+    margin: 0 30px;
     padding-top: 62px;
   }
 
   .offer__slogan {
     font-size: 60px;
     line-height: 60px;
-    color: #000000;
+    color: variables.$black;
     text-align: left;
+    margin-left: 87px;
+    margin-bottom: 41px;
   }
 
   .offer__description {
     font-size: 20px;
     line-height: 20px;
-    color: #000000;
+    color: variables.$black;
     text-align: left;
+    margin-left: 87px;
+    margin-bottom: 20px;
   }
 
   .offer__to-catalog {
     position: absolute;
     top: 292px;
     width: 244px;
+    left: 91px;
+  }
+
+  .offer__image {
+    width: 709px;
+    height: 609px;
+    margin: 0 auto;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: variables.$desktop-width) {
   .offer {
-    background-image: linear-gradient(-90deg, rgba(104, 183, 56, 0.85) 720px, #ffffff 720px), url("../img/main/index-background-desktop2.jpg");
+    background-image: linear-gradient(-90deg, rgba(104, 183, 56, 0.85) 50%, #ffffff 50%), url("../img/main/index-background-desktop2.jpg");
     background-repeat: no-repeat;
-    color: #ffffff;
+    color: variables.$white;
     background-position: right top;
   }
 
   .offer__wrapper {
+    margin: 0 auto;
     width: 1220px;
+    padding-top: 223px;
+    padding-bottom: 54px;
+  }
+
+  .offer__slogan {
+    margin-left: 80px;
+    margin-bottom: 40px;
+  }
+
+  .offer__description {
+    margin-left: 80px;
+    margin-bottom: 237px;
+  }
+
+  .offer__to-catalog {
+    top: 455px;
+    left: 80px;
+  }
+
+  .offer__image {
+    position: absolute;
+    top: 141px;
+    right: 220px;
+    width: 552px;
+    height: 499px;
   }
 }

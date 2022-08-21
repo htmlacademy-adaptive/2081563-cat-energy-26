@@ -1,15 +1,17 @@
+@use "../global/variables.scss";
+
 .title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 36px;
-  line-height: 40px;
-  color: #000000;
+  font-size: 24px;
+  line-height: 26px;
+  color: variables.$black;
 }
 
-@media (min-width: 768px) {
+@media (min-width: variables.$tablet-width) {
   .title {
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 36px;
+    line-height: 36px;
   }
 }

@@ -1,27 +1,78 @@
+@use "../global/variables.scss";
+
 .social {
-  margin: 0 auto;
-  width: 280px;
+  margin: 0 20px;
   padding-top: 39px;
   padding-bottom: 22px;
 }
 
-.social__list {
-  margin: 0 0 43px;
-  padding: 0;
-  list-style-type: none;
-  display: flex;
-}
+.social-footer__logo-name {
+  display: block;
+  width: 128px;
+  margin: 0 auto 32px;
 
-@media (min-width: $tablet-width) {
-  .social {
-    width: 708px;
-    display: flex;
-    justify-content: space-between;
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 
-@media (min-width: $desktop-width) {
+.social__link {
+  &:hover {
+    .social__icon {
+      fill: variables.$basic-green;
+    }
+  }
+
+  &:active {
+    .social__icon {
+      fill: variables.$basic-green;
+      opacity: 0.3;
+    }
+  }
+}
+
+.social__list {
+  margin: 0 0 22px;
+  padding: 20px 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+@media (max-width: variables.$mobile-width-only) {
+  .social__list {
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+  }
+}
+
+@media (min-width: variables.$tablet-width) {
+  .social {
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .social-footer__logo-name {
+    margin: 0;
+  }
+
+  .social__list {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
   .social {
     width: 1220px;
+    margin: 0 auto;
   }
 }

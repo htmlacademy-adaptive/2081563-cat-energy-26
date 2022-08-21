@@ -1,6 +1,10 @@
-@media (min-width: $desktop-width) {
+@use "../global/variables.scss";
+
+@media (min-width: variables.$desktop-width) {
   .questionnaire {
     display: flex;
     justify-content: space-between;
+    gap: 80px;
+    padding: 0 110px;
   }
 }

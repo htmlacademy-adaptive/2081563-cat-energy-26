@@ -1,27 +1,106 @@
-.slider__range-wrapper {
-  display: flex;
-  justify-content: space-around;
+@use "../global/variables.scss";
+
+.slider {
+  margin: 0 auto;
+  width: 100%;
+  height: 256px;
+  position: relative;
 }
 
-.slider__description {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
+.slider__before,
+.slider__after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  pointer-events: none;
+  overflow: hidden;
+  background-color: #eaeaea;
 }
 
-@media (min-width: $tablet-width) {
-  .slider__description {
-    font-size: 20px;
-    line-height: 30px;
+.slider__image {
+  height: 100%;
+}
+
+.slider__before {
+  width: 50%;
+}
+
+.slider__button {
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  width: 4px;
+  border-radius: 2px;
+  border: none;
+  background-color: #666666;
+  left: 50%;
+  cursor: pointer;
+}
+
+.slider__button:hover {
+  background-color: variables.$basic-green;
+
+  .slider__button-scroller {
+    border-color: variables.$basic-green;
+
+    svg {
+      fill: variables.$basic-green;
+    }
   }
 }
 
-@media (min-width: $desktop-width) {
+.slider__button:active {
+  opacity: 0.6;
+}
+
+.slider__button-scroller {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: variables.$white;
+  border: 2px solid #666666;
+}
+
+@media (min-width: variables.$tablet-width) {
   .slider {
-    width: 592px;
+    height: 512px;
+    width: 560px;
+  }
+
+  .slider__after {
+    background-image: linear-gradient(360deg, variables.$basic-grey 361px, variables.$white 361px);
+  }
+
+  .slider__before {
+    background-image: linear-gradient(360deg, variables.$basic-grey 361px, variables.$white 361px);
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .slider {
+    width: 560px;
     flex-shrink: 0;
+  }
+
+  .slider__after {
+    background-image: linear-gradient(360deg, variables.$basic-grey 387px, variables.$white 387px);
+  }
+
+  .slider__before {
+    background-image: linear-gradient(360deg, variables.$basic-grey 387px, variables.$white 387px);
   }
 }
