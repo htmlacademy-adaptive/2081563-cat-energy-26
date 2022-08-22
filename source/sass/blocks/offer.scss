@@ -88,10 +88,10 @@
 
 @media (min-width: variables.$desktop-width) {
   .offer {
-    background-image: linear-gradient(-90deg, rgba(104, 183, 56, 0.85) 50%, #ffffff 50%), url("../img/main/index-background-desktop2.jpg");
+    background-image: linear-gradient(-90deg, rgba(104, 183, 56, 0.85) 50%, #ffffff 50%), url("../img/main/index-background-desktop1.jpg");
     background-repeat: no-repeat;
     color: variables.$white;
-    background-position: right top;
+    background-position: right top, right -317px top -3px;
   }
 
   .offer__wrapper {

@@ -16,8 +16,13 @@
     <div class="main-header__wrapper">
     <div class="main-header__wrapper-links">
     <a class="main-header__logo-cat">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/header/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/header/logo-tablet.svg">
       <img class="main-header__cat-image" src="img/header/logo-cat-mobile.svg" width="34" height="38"
-        alt="Логотип кота"> </a>
+        alt="Логотип кота">
+      </picture>
+      </a>
     <a class="main-header__logo-name logo-name">
       <img class="main-header__name-image" src="img/header/logo-name.svg" width="101" height="18"
         alt="Магазин Cat Energy">
@@ -64,7 +69,11 @@
         <p class="offer__description">
           Занялся собой? Займись котом!
         </p>
-        <img class="offer__image" src="img/main/cat-energy.png" width="280" height="270" alt="Кошачий корм.">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/main/index-can-desktop1.png 1x, img/main/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/main/index-cat-tablet1.png 1x, img/main/index-can-tablet1@2x.png 2x">
+        <img class="offer__image" src="img/main/cat-energy.png" srcset="img/main/index-can-mobile1@2x.png" width="280" height="270" alt="Кошачий корм.">
+        </picture>
         <a class="offer__to-catalog button" href="catalog.html">
           <span>подобрать программу</span>
         </a>
