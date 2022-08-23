@@ -17,9 +17,14 @@
   <header class="main-header">
     <div class="main-header__wrapper">
     <div class="main-header__wrapper-links">
-    <a class="main-header__logo-cat" href="index.html">
-      <img class="main-header__cat-image" src="img/header/logo-cat-mobile.svg" width="34" height="38"
-        alt="Логотип кота"> </a>
+      <a class="main-header__logo-cat">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/header/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/header/logo-tablet.svg">
+        <img class="main-header__cat-image" src="img/header/logo-cat-mobile.svg" width="34" height="38"
+          alt="Логотип кота">
+        </picture>
+        </a>
     <a class="main-header__logo-name logo-name" href="index.html">
       <img class="main-header__name-image" src="img/header/logo-name.svg" width="101" height="18"
         alt="Магазин Cat Energy">

@@ -180,11 +180,18 @@
     </div>
         <div class="presentation__slider slider">
           <div class="slider__after">
-            <img class="slider__image" src="img/main/slider-after.png" alt="Кот, после.">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/main/slider/slider-after/viewport=tabletstate=after@1x.png 1x , img/main/slider/slider-after/vate=after@2x.png 2x">
+            <img class="slider__image" src="img/main/slider/slider-after/mobistate=after@1x.png"
+             srcset="img/main/slider/slider-after/mobiletate=after@2x.png 2x" alt="Кот, после.">
+          </picture>
             </div>
           <div class="slider__before">
-          <img class="slider__image slider__image--current" src="img/main/slider-before.png"
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/main/slider/slider-before/tabletstate=before@1x.png 1x , img/main/slider/slider-before/tabletstate=before@2x.png 2x">
+          <img class="slider__image slider__image--current" src="img/main/slider/slider-before/e=before@1x.png" srcset="img/main/slider/slider-before/before@2x.png 2x"
             alt="Кот, до.">
+          </picture>
           </div>
             <button class="slider__button" type="button">
               <span class="visually-hidden">Скроллер слайдера.</span>
