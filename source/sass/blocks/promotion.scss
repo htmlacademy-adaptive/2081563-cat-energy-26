@@ -7,6 +7,14 @@
   background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/main/image-article.jpg");
   color: variables.$white;
   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-resolution: 2dppx) {
+  .promotion {
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/article/image1@2x.jpg");
+    background-size: cover;
+  }
 }
 
 .promotion__link {
@@ -37,6 +45,14 @@
     background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/article/image2.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .promotion {
+      background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/article/image2@2x.jpg");
+      background-size: cover;
+    }
   }
 
   .promotion__link {
@@ -66,6 +82,13 @@
     background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/main/image-article.jpg");
     background-repeat: no-repeat;
     background-position: center, -30px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .promotion {
+      background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/article/image1@2x.jpg");
+      background-size: cover;
+    }
   }
 
   .promotion__link {
