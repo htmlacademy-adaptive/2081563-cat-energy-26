@@ -37,6 +37,10 @@
     margin: 0 30px;
   }
 
+  .main-header__logo-name {
+    display: none;
+  }
+
   .main-header__wrapper {
     display: flex;
     justify-content: space-between;
@@ -50,14 +54,15 @@
 
   .main-header__cat-image {
     margin-right: 12px;
+    width: 174px;
+    height: 52px;
   }
 }
 
 @media (min-width: variables.$desktop-width) {
   .main-header__wrapper {
-    margin: auto;
+    margin: 0 110px;
     position: absolute;
-    max-width: 1220px;
     background-color: transparent;
     top: 53px;
     left: 0;
@@ -68,5 +73,7 @@
 
   .main-header__cat-image {
     margin-right: 14px;
+    width: 202px;
+    height: 59px;
   }
 }

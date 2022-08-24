@@ -43,9 +43,11 @@
 @media (min-width: variables.$tablet-width) {
   .button {
     font-size: 20px;
+    padding: 8px 0;
   }
 
   .button-catalog {
     font-size: 16px;
+    padding: 1px 0;
   }
 }

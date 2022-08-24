@@ -7,6 +7,14 @@
   background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/main/image-article.jpg");
   color: variables.$white;
   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-resolution: 2dppx) {
+  .promotion {
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/article/image1@2x.jpg");
+    background-size: cover;
+  }
 }
 
 .promotion__link {
@@ -34,6 +42,17 @@
   .promotion {
     margin: 0 30px 76px;
     padding: 57px 124px 60px 70px;
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/article/image2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .promotion {
+      background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/article/image2@2x.jpg");
+      background-size: cover;
+    }
   }
 
   .promotion__link {
@@ -60,6 +79,16 @@
     bottom: 0;
     padding: 56px 42px 42px;
     margin: 0;
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/main/image-article.jpg");
+    background-repeat: no-repeat;
+    background-position: center, -30px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .promotion {
+      background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/article/image1@2x.jpg");
+      background-size: cover;
+    }
   }
 
   .promotion__link {
