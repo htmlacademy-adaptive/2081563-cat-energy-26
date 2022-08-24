@@ -25,10 +25,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-
-  br {
-    display: none;
-  }
+  max-width: 230px;
 }
 
 @media (max-width: variables.$mobile-width-only) {
@@ -47,12 +44,15 @@
     margin: 0 70px 54px;
     font-size: 60px;
     line-height: 60px;
+    padding: 0;
   }
 
   .main-form__description {
     margin: 0 70px 66px;
     font-size: 20px;
     line-height: 30px;
+    max-width: 313px;
+    padding: 0;
   }
 }
 
@@ -68,9 +68,5 @@
 
   .main-form__description {
     margin: 0 0 66px 110px;
-
-    br {
-      display: block;
-    }
   }
 }
