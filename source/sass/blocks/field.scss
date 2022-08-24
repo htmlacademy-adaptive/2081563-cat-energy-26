@@ -45,14 +45,10 @@ input[type="number"] {
     outline: 2px solid #444444;
 
     & + .field__input--tel-icon {
-      g {
         fill: variables.$basic-green;
-      }
     }
     & + .field__input--email-icon {
-      path {
         stroke: variables.$basic-green;
-      }
     }
   }
 
