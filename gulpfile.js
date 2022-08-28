@@ -71,7 +71,7 @@ const webp = () => {
 // SVG
 
 const svg = () => {
-  return gulp.src('source/img/*.svg')
+  return gulp.src('source/img/**/*.svg')
   .pipe(svgo())
   .pipe(gulp.dest('build/img'));
 }
@@ -82,7 +82,7 @@ const sprite = () => {
   .pipe(svgstore({
     inlineSvg: true
   }))
-  .pipe(rename('spite.svg'))
+  .pipe(rename('sprite.svg'))
   .pipe(gulp.dest('build/img'))
 }
 

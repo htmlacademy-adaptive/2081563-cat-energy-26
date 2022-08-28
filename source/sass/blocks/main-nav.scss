@@ -10,7 +10,26 @@
   cursor: pointer;
   padding: 0;
   width: 24px;
-  height: 16px;
+}
+
+.main-nav__toogle--open {
+  .close-menu {
+    display: block;
+  }
+
+  .toogle-burger {
+    display: none;
+  }
+}
+
+.main-nav__toogle--closed {
+  .close-menu {
+    display: none;
+  }
+
+  .toogle-burger {
+    display: block;
+  }
 }
 
 .main-nav__list {

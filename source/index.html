@@ -27,10 +27,12 @@
       <img class="main-header__name-image" src="img/header/logo-name.svg" width="101" height="18"
         alt="Магазин Cat Energy">
     </a>
-    <button class="main-nav__toogle main-nav__toogle--nojs" type="button">
-      <span class="visually-hidden">Открыть меню.</span>
+    <button class="main-nav__toogle main-nav__toogle--nojs main-nav__toogle--open main-nav__toogle--closed" type="button">
+      <svg class="close-menu" aria-hidden="true" focusable="false" width="20" height="20">
+        <use href="img/sprite.svg#closed"></use>
+      </svg>
       <svg class="toogle-burger" aria-hidden="true" focusable="false" width="24" height="18">
-        <use href="img/sprite.svg#icon-burger"></use>
+        <use href="img/sprite.svg#burger-menu"></use>
       </svg>
     </button>
   </div>
@@ -72,12 +74,12 @@
           Занялся собой? Займись котом!
         </p>
         <picture>
-          <source type="image/webp" media="(min-width: 1440px)" srcset="img/main/webp/index-can-desktop.webp 1x, img/main/webp/index-can-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/main/webp/index-can-tablet.webp 1x, img/main/webp/index-can-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/main/webp/index-can-mobile.webp 1x, img/main/webp/index-can-mobile@2x.webp 2x">
-          <source media="(min-width: 1440px)" srcset="img/main/index-can-desktop1.png 1x, img/main/index-can-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/main/index-cat-tablet1.png 1x, img/main/index-can-tablet1@2x.png 2x">
-        <img class="offer__image" src="img/main/cat-energy.png" srcset="img/main/index-can-mobile1@2x.png" width="280" height="270" alt="Кошачий корм.">
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/main/cup/cup-desktop.webp 1x, img/main/cup/cup-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/main/cup/cup-tablet.webp 1x, img/main/cup/cup-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/main/cup/cup-mobile.webp 1x, img/main/cup/cup-mobile@2x.webp 2x">
+          <source media="(min-width: 1440px)" srcset="img/main/cup/cup-desktop.png 1x, img/main/cup/cup-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/main/cup/cup-tablet.png 1x, img/main/cup/cup-tablet@2x.png 2x">
+        <img class="offer__image" src="img/main/cup/cup-mobile.png" srcset="img/main/cup/cup-mobile@2x.png 2x" width="280" height="270" alt="Кошачий корм.">
         </picture>
         <a class="offer__to-catalog button" href="catalog.html">
           <span>подобрать программу</span>
@@ -90,8 +92,8 @@
         <div class="services__loss services-item">
           <div class="services-item__wrapper">
             <span class="services-item__circle">
-              <svg class="services-item__icon-loss" width="36" height="50">
-                <use href="img/sprite.svg#icon-loss"></use>
+              <svg class="services-item__icon-loss" viewBox="0 0 36 50" width="36" height="50">
+                <use href="img/sprite.svg#cat-slim"></use>
               </svg>
             </span>
           <h3 class="services-item__title">
@@ -109,8 +111,8 @@
         <div class="services__gain services-item">
           <div class="services-item__wrapper">
             <span class="services-item__circle">
-              <svg class="services-item__icon-gain" width="67" height="28">
-                <use href="img/sprite.svg#icon-gain"></use>
+              <svg class="services-item__icon-gain" viewBox="0 0 67 28" width="67" height="28">
+                <use href="img/sprite.svg#cat-pro"></use>
               </svg>
             </span>
           <h3 class="services-item__title">
@@ -133,8 +135,8 @@
         <ul class="advantages__list">
           <li class="advantages__item">
             <span class="advantages__item-icon">
-              <svg class="advantages__item-svg" width="26" height="28" fill="white">
-                <use href="img/sprite.svg#icon-petal"></use>
+              <svg class="advantages__item-svg" viewBox="0 0 26 28" width="26" height="28" fill="white">
+                <use href="img/sprite.svg#leaf"></use>
               </svg>
             </span>
             <p class="advantages__text advantages__item--food">Функциональное питание
@@ -144,8 +146,8 @@
           </li>
           <li class="advantages__item">
             <span class="advantages__item-icon">
-              <svg width="29" height="32">
-                <use href="img/sprite.svg#icon-powder"></use>
+              <svg viewBox="0 0 29 32" width="29" height="32">
+                <use href="img/sprite.svg#powder"></use>
               </svg>
             </span>
             <p class="advantages__text advantages__item--powder">Выпускается в виде порошка,
@@ -155,8 +157,8 @@
           </li>
           <li class="advantages__item">
             <span class="advantages__item-icon">
-              <svg widht="26" height="30">
-                <use href="img/sprite.svg#icon-replacement"></use>
+              <svg viewBox="0 0 26 30" widht="26" height="30">
+                <use href="img/sprite.svg#eat"></use>
               </svg>
             </span>
             <p class="advantages__text advantages__item--replacement">Замените один-два приема
@@ -166,8 +168,8 @@
           </li>
           <li class="advantages__item">
             <span class="advantages__item-icon">
-              <svg widht="25" height="30">
-                <use href="img/sprite.svg#icon-time"></use>
+              <svg viewBox="0 0 25 30" widht="25" height="30">
+                <use href="img/sprite.svg#clock"></use>
               </svg>
             </span>
             <p class="advantages__text advantages__item--time">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
@@ -202,14 +204,18 @@
         <div class="presentation__slider slider">
           <div class="slider__after">
             <picture>
-              <source media="(min-width: 768px)" srcset="img/main/slider/slider-after/viewport=tabletstate=after@1x.png 1x , img/main/slider/slider-after/vate=after@2x.png 2x">
-            <img class="slider__image" src="img/main/slider/slider-after/mobistate=after@1x.png" srcset="img/main/slider/slider-after/mobiletate=after@2x.png 2x" alt="Кот, после.">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/main/slider/slider-after/after-tablet.webp 1x, img/main/slider/slider-after/after-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/main/slider/slider-after/after-mobile.webp 1x, img/main/slider/slider-after/after-mobile@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/main/slider/slider-after/after-tablet.png 1x , img/main/slider/slider-after/after-tablet@2x.png 2x">
+            <img class="slider__image" src="img/main/slider/slider-after/after-mobile.png" srcset="img/main/slider/slider-after/after-mobile@2x.png 2x" alt="Кот, после.">
           </picture>
             </div>
           <div class="slider__before">
             <picture>
-              <source media="(min-width: 768px)" srcset="img/main/slider/slider-before/tabletstate=before@1x.png 1x , img/main/slider/slider-before/tabletstate=before@2x.png 2x">
-          <img class="slider__image slider__image--current" src="img/main/slider/slider-before/e=before@1x.png" srcset="img/main/slider/slider-before/before@2x.png 2x"
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/main/slider/slider-before/before-tablet.webp 1x, img/main/slider/slider-before/before-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/main/slider/slider-before/before-mobile.webp 1x, img/main/slider/slider-before/before-mobile@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/main/slider/slider-before/before-tablet.png 1x , img/main/slider/slider-before/before-tablet@2x.png 2x">
+          <img class="slider__image slider__image--current" src="img/main/slider/slider-before/before-mobile.png" srcset="img/main/slider/slider-before/before-mobile@2x.png 2x"
             alt="Кот, до.">
           </picture>
           </div>
@@ -217,7 +223,7 @@
               <span class="visually-hidden">Скроллер слайдера.</span>
               <span class="slider__button-scroller">
                 <svg width="24" height="18" fill="#666">
-                  <use href="img/sprite.svg#icon-scroller"></use>
+                  <use href="img/sprite.svg#slider-arrows"></use>
                 </svg>
               </span>
             </button>
@@ -251,7 +257,7 @@
           <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Логотип вконтакте.</span>
             <svg class="social__icon" fill="#666" aria-hidden="true" focusable="false" width="28" height="22">
-              <use href="img/sprite.svg#icon-vk"></use>
+              <use href="img/sprite.svg#vk"></use>
             </svg>
           </a>
         </li>
@@ -259,7 +265,7 @@
           <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden">Логотип ютуб.</span>
             <svg class="social__icon" width="28" height="22" aria-hidden="true" focusable="false" fill="#666">
-              <use href="img/sprite.svg#icon-youtube"></use>
+              <use href="img/sprite.svg#youtube"></use>
             </svg>
           </a>
         </li>
@@ -267,7 +273,7 @@
           <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Логотип Телеграмм.</span>
             <svg class="social__icon" width="28" height="22" aria-hidden="true" focusable="false" fill="#666">
-            <use href="img/sprite.svg#icon-telegram"></use>
+            <use href="img/sprite.svg#telegram"></use>
             </svg>
           </a>
         </li>
@@ -276,7 +282,7 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="copyright__text">HTML Academy</p>
           <svg class="copyright__logo" width="27" height="34" aria-hidden="true" focusable="false" fill="#666">
-            <use href="img/sprite.svg#icon-academy"></use>
+            <use href="img/sprite.svg#academy"></use>
             </svg>
         </a>
       </div>
