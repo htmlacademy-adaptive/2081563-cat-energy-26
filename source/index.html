@@ -11,9 +11,6 @@
   <link rel="apple-touch-icon" href="img/favicons/152.png">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
-
-//Проверка удаление папки
-
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper">
@@ -205,23 +202,23 @@
       </div>
     </div>
         <div class="presentation__slider slider">
-          <div class="slider__after">
-            <picture>
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/main/slider/slider-after/after-tablet.webp 1x, img/main/slider/slider-after/after-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/main/slider/slider-after/after-mobile.webp 1x, img/main/slider/slider-after/after-mobile@2x.webp 2x">
-              <source media="(min-width: 768px)" srcset="img/main/slider/slider-after/after-tablet.png 1x , img/main/slider/slider-after/after-tablet@2x.png 2x">
-            <img class="slider__image" src="img/main/slider/slider-after/after-mobile.png" srcset="img/main/slider/slider-after/after-mobile@2x.png 2x" alt="Кот, после.">
-          </picture>
-            </div>
           <div class="slider__before">
             <picture>
               <source type="image/webp" media="(min-width: 768px)" srcset="img/main/slider/slider-before/before-tablet.webp 1x, img/main/slider/slider-before/before-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/main/slider/slider-before/before-mobile.webp 1x, img/main/slider/slider-before/before-mobile@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/main/slider/slider-before/before-tablet.png 1x , img/main/slider/slider-before/before-tablet@2x.png 2x">
-          <img class="slider__image slider__image--current" src="img/main/slider/slider-before/before-mobile.png" srcset="img/main/slider/slider-before/before-mobile@2x.png 2x"
+          <img class="slider__image slider__image--before" src="img/main/slider/slider-before/before-mobile.png" srcset="img/main/slider/slider-before/before-mobile@2x.png 2x"
             alt="Кот, до.">
           </picture>
           </div>
+          <div class="slider__after">
+            <picture>
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/main/slider/slider-after/after-tablet.webp 1x, img/main/slider/slider-after/after-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/main/slider/slider-after/after-mobile.webp 1x, img/main/slider/slider-after/after-mobile@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/main/slider/slider-after/after-tablet.png 1x , img/main/slider/slider-after/after-tablet@2x.png 2x">
+            <img class="slider__image slider__image--after" src="img/main/slider/slider-after/after-mobile.png" srcset="img/main/slider/slider-after/after-mobile@2x.png 2x" alt="Кот, после.">
+          </picture>
+            </div>
             <button class="slider__button" type="button">
               <span class="visually-hidden">Скроллер слайдера.</span>
               <span class="slider__button-scroller">

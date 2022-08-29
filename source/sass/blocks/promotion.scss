@@ -4,7 +4,7 @@
 .promotion {
   margin: 0 20px 35px;
   padding: 59px 0 43px;
-  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/main/image-article.jpg");
+  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/article/article-mobile.jpg");
   color: variables.$white;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,7 +12,7 @@
 
 @media (min-resolution: 2dppx) {
   .promotion {
-    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/article/image1@2x.jpg");
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/article/article-mobile@2x.jpg");
     background-size: cover;
   }
 }
@@ -42,7 +42,7 @@
   .promotion {
     margin: 0 30px 76px;
     padding: 57px 124px 60px 70px;
-    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/article/image2.jpg");
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/article/article-tablet.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -50,7 +50,7 @@
 
   @media (min-resolution: 2dppx) {
     .promotion {
-      background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/article/image2@2x.jpg");
+      background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/article/article-tablet@2x.jpg");
       background-size: cover;
     }
   }
@@ -79,14 +79,18 @@
     bottom: 0;
     padding: 56px 42px 42px;
     margin: 0;
-    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/main/image-article.jpg");
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/article/article-mobile.jpg");
     background-repeat: no-repeat;
     background-position: center, -30px;
   }
 
+  .promotion__description {
+    text-align: center;
+  }
+
   @media (min-resolution: 2dppx) {
     .promotion {
-      background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/article/image1@2x.jpg");
+      background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/article/article-mobile@2x.jpg");
       background-size: cover;
     }
   }
