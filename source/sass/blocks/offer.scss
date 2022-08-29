@@ -10,7 +10,7 @@
   width: 100%;
   height: 302px;
   background-color: #4e4e53;
-  background-image: url("../img/main/cat-offer/index-background-desktop2.jpg");
+  background-image: url("../img/main/cat-offer/cat-background-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -28,7 +28,7 @@
 
 @media (min-resolution: 2dppx) {
   .offer__cat-image {
-    background-image: url("../img/main/cat-offer/index-background-desktop2@2x.jpg");
+    background-image: url("../img/main/cat-offer/cat-background-mobile@2x.jpg");
   }
 }
 
@@ -127,12 +127,12 @@
     width: 50%;
     height: 100%;
     right: 0;
-    background-image: url("../img/main/cat-offer/index-background-desktop1.jpg");
+    background-image: url("../img/main/cat-offer/cat-background-desktop.jpg");
   }
 
   @media (min-resolution: 2dppx) {
     .offer__cat-image {
-      background-image: url("../img/main/cat-offer/index-background-desktop@2x.jpg");
+      background-image: url("../img/main/cat-offer/cat-background-desktop@2x.jpg");
     }
   }
 
