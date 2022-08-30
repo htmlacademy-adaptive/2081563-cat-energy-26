@@ -5,15 +5,13 @@
   position: relative;
 }
 
-.offer__cat-image {
+.offer__cat-image-wrapper {
   position: absolute;
   width: 100%;
-  height: 302px;
   background-color: #4e4e53;
-  background-image: url("../img/main/cat-offer/cat-background-mobile.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  object-fit: cover;
+  object-position: center;
+
 
   &::after {
     content: "";
@@ -26,10 +24,10 @@
   }
 }
 
-@media (min-resolution: 2dppx) {
-  .offer__cat-image {
-    background-image: url("../img/main/cat-offer/cat-background-mobile@2x.jpg");
-  }
+.offer__cat-image {
+  display: block;
+  width: 100%;
+  object-fit: cover;
 }
 
 .offer__wrapper {
@@ -122,18 +120,15 @@
     color: variables.$white;
   }
 
-  .offer__cat-image {
-    display: block;
+  .offer__cat-image-wrapper {
     width: 50%;
     height: 100%;
     right: 0;
-    background-image: url("../img/main/cat-offer/cat-background-desktop.jpg");
   }
 
-  @media (min-resolution: 2dppx) {
-    .offer__cat-image {
-      background-image: url("../img/main/cat-offer/cat-background-desktop@2x.jpg");
-    }
+  .offer__cat-image {
+    display: block;
+    height: 100%;
   }
 
   .offer__wrapper {
