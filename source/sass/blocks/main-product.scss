@@ -111,6 +111,9 @@
     padding: 0 36px 39px;
     background-image: linear-gradient(360deg, variables.$basic-grey 430px, variables.$white 430px);
     border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
   }
 
   .main-product__image {
@@ -162,7 +165,7 @@
       height: 1px;
       left: 0;
       right: 0;
-      top: 25px;
+      bottom: -9px;
       background-color: #cdcdcd;
     }
 

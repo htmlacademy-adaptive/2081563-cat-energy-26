@@ -134,6 +134,10 @@
 }
 
 @media (min-width: variables.$desktop-width) {
+  .main-nav {
+    max-width: 50%;
+  }
+
   .main-nav__item-link--index {
     color: variables.$white;
 
@@ -158,6 +162,7 @@
 
   .main-nav__list {
     background-color: transparent;
+    flex-wrap: wrap;
   }
 
   .main-nav__item-link {

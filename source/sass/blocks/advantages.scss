@@ -22,6 +22,7 @@
   padding: 0;
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 
 .advantages__item-icon {
@@ -94,9 +95,9 @@
   }
 
   .advantages__list {
-    display: flex;
     margin: 0;
     gap: 79px;
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .advantages__title {

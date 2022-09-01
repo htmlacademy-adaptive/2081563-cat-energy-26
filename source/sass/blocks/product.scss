@@ -61,9 +61,12 @@
 
   .product__button {
     width: 244px;
+    justify-self: flex-end;
     grid-row: inherit;
     grid-column: inherit;
-    justify-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .product__attribute {
