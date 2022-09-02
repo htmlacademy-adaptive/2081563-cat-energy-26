@@ -20,11 +20,12 @@
   line-height: 37px;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 5px;
 }
 
 .services-item__description {
   color: variables.$dark-grey;
-  margin: 0 0 42px;
+  margin: 0 0 39px;
 }
 
 .services-item__circle {
@@ -145,6 +146,7 @@
   .services-item__link {
     font-size: 20px;
     line-height: 30px;
+    gap: 25px;
   }
 
   .services-item__circle {
@@ -205,5 +207,9 @@
     bottom: 24px;
     width: 134px;
     height: 56px;
+  }
+
+  .services-item__link {
+    gap: 29px;
   }
 }

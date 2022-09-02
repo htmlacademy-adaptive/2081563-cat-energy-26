@@ -3,7 +3,7 @@
 
 .promotion {
   margin: 0 20px 35px;
-  padding: 59px 0 43px;
+  padding: 65px 0 43px;
   background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/article/article-mobile.jpg");
   color: variables.$white;
   background-repeat: no-repeat;
@@ -29,7 +29,9 @@
 }
 
 .promotion__icon {
-  margin: 0 0 48px;
+  width: 57px;
+  height: 61px;
+  margin: 0 0 60px;
 }
 
 .promotion__description {
@@ -41,7 +43,7 @@
 @media (min-width: variables.$tablet-width) {
   .promotion {
     margin: 0 30px 76px;
-    padding: 57px 124px 60px 70px;
+    padding: 63px 123px 74px 90px;
     background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/article/article-tablet.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -63,8 +65,6 @@
 
   .promotion__icon {
     margin: 0;
-    width: 80px;
-    height: 82px;
   }
 
   .promotion__description {

@@ -6,7 +6,7 @@
 
 .presentation__wrapper {
   margin: 0 20px;
-  padding-top: 25px;
+  padding-top: 32px;
   padding-bottom: 40px;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .presentation__title {
-  margin: 0 0 40px;
+  margin: 0 0 47px;
 }
 
 .presentation__description {
@@ -73,6 +73,7 @@
   font-size: 14px;
   line-height: 20px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 @media (max-width: variables.$mobile-width-only) {
@@ -100,6 +101,7 @@
 
   .presentation__description {
     margin-bottom: 54px;
+    margin-right: 15px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -111,16 +113,17 @@
   .presentation__list-total-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 104px;
+    margin-bottom: 71px;
   }
 
   .presentation__list {
     width: 162px;
-    height: 77px;
+    height: 71px;
   }
 
   .presentation__description-details {
     font-size: 30px;
+    margin-bottom: 6px;
   }
 
   .presentation__description-title {
@@ -133,6 +136,11 @@
     font-size: 20px;
     line-height: 20px;
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    margin-top: 11px;
+    letter-spacing: 0.2px;
+    gap: 8px;
   }
 
   .presentation__slider {
@@ -143,6 +151,7 @@
 @media (min-width: variables.$desktop-width) {
   .presentation {
     border: none;
+    background-image: linear-gradient(360deg, variables.$basic-grey 490px, variables.$white 490px);
   }
 
   .presentation__wrapper {
@@ -160,6 +169,7 @@
   }
 
   .presentation__description {
+    margin: 0;
     margin-bottom: 69px;
     width: 436px;
   }
@@ -181,6 +191,8 @@
   .presentation__total {
     text-align: left;
     max-width: 436px;
+    flex-direction: row;
+    gap: 0;
 
     &-price {
       margin-left: 63px;

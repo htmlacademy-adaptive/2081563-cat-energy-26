@@ -7,11 +7,20 @@
   font-size: 24px;
   line-height: 26px;
   color: variables.$black;
+
+  &--index {
+    font-size: 36px;
+  }
 }
 
 @media (min-width: variables.$tablet-width) {
   .title {
     font-size: 36px;
     line-height: 36px;
+
+    &--index {
+      font-size: 60px;
+      line-height: 60px;
+    }
   }
 }

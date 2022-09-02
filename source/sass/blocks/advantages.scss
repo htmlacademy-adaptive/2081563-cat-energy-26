@@ -5,7 +5,7 @@
 }
 
 .advantages__title {
-  margin: 0 0 40px;
+  margin: 0 0 47px;
 }
 
 .advantages__list {
@@ -51,10 +51,14 @@
     margin: 0 30px;
   }
 
+  .advantages__title {
+    margin-bottom: 72px;
+  }
+
   .advantages__list {
     grid-template-columns: 1fr 1fr;
     row-gap: 134px;
-    column-gap: 182px;
+    column-gap: 137px;
     justify-content: space-between;
     margin-right: 79px;
   }

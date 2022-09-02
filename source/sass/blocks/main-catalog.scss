@@ -36,10 +36,19 @@
 }
 
 @media (min-width: variables.$tablet-width) {
+  .main-catalog__wrapper {
+    padding-top: 60px;
+  }
+
+  .main-catalog__products {
+    margin-bottom: 68px;
+  }
+
   .main-catalog__title {
     @include mixins.container-tablet;
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 100px;
   }
 
   .main-catalog__another-products {
@@ -49,12 +58,11 @@
 
 @media (min-width: variables.$desktop-width) {
   .main-catalog__wrapper {
-    padding-top: 188px;
+    padding-top: 185px;
   }
 
   .main-catalog__title {
     @include mixins.container-desktop;
-    margin-bottom: 84px;
   }
 
   .main-catalog__promotion {

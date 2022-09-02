@@ -10,6 +10,7 @@
   padding: 26px 0;
   display: flex;
   justify-content: space-between;
+  gap: 16px;
 }
 
 .contacts__slogan {
@@ -20,6 +21,8 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+  flex-shrink: 0;
+  width: 125px;
 }
 
 .contacts__address {
@@ -31,16 +34,22 @@
 @media (min-width: variables.$tablet-width) {
   .contacts__wrapper {
     margin: 0 30px;
-    padding: 26px 40px;
+    padding: 59px 40px;
   }
 
   .contacts__slogan {
     font-size: 20px;
     line-height: 26px;
+    width: 172px;
   }
 
   .contacts__address {
     font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 160px;
+    text-align: right;
   }
 }
 
@@ -51,7 +60,7 @@
     top: 95px;
     left: 110px;
     background-color: variables.$white;
-    padding: 56px 80px;
+    padding: 60px 80px;
     margin: 0;
     justify-content: flex-start;
     gap: 87px;
@@ -64,6 +73,7 @@
 
   .contacts__address {
     width: 155px;
+    text-align: left;
   }
 
   .contacts__city {
