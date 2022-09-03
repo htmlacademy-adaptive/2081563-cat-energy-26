@@ -45,7 +45,7 @@
 @media (min-width: variables.$tablet-width) {
   .comment__title {
     padding: 0 69px;
-    margin-bottom: 67px;
+    margin-bottom: 76px;
 
     &::after {
       left: 289px;
@@ -63,9 +63,9 @@
   }
 
   .comment__form {
-    width: calc(100% - 60px);
+    width: calc(100% - 138px);
     height: 174px;
-    margin: 0 30px;
+    margin: 0 71px;
     padding: 10px 15px;
     font-size: 20px;
     line-height: 30px;
@@ -75,6 +75,7 @@
 @media (min-width: variables.$desktop-width) {
   .comment__title {
     padding: 0 110px;
+    margin-bottom: 75px;
 
     &::after {
       left: 332px;
@@ -88,5 +89,6 @@
   .comment__form {
     width: calc(100% - 220px);
     margin: 0 110px;
+    padding: 8px 20px;
   }
 }

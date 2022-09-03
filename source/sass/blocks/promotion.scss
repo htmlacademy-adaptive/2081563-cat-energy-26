@@ -43,7 +43,7 @@
 @media (min-width: variables.$tablet-width) {
   .promotion {
     margin: 0 30px 76px;
-    padding: 63px 123px 74px 90px;
+    padding: 63px 123px 68px 90px;
     background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/article/article-tablet.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -69,6 +69,7 @@
 
   .promotion__description {
     text-align: left;
+    margin-top: 10px;
   }
 }
 
@@ -77,7 +78,7 @@
     position: absolute;
     right: 110px;
     bottom: 0;
-    padding: 56px 42px 42px;
+    padding: 63px 42px 42px;
     margin: 0;
     background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/article/article-mobile.jpg");
     background-repeat: no-repeat;
@@ -101,6 +102,6 @@
   }
 
   .promotion__icon {
-    margin-bottom: 46px;
+    margin-bottom: 53px;
   }
 }

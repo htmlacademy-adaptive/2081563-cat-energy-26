@@ -134,6 +134,7 @@
     background-color: transparent;
     border: 2px solid #f2f2f2;
     background-image: none;
+    margin-top: 80px;
   }
 
   .main-product__plus {
@@ -153,9 +154,8 @@
   }
 
   .main-product__image-wrapper {
-    height: 200px;
     align-items: center;
-    margin-bottom: 26px;
+    margin-bottom: 45px;
   }
 
   .main-product__list {
@@ -206,5 +206,15 @@
 
   .main-product__link-more {
     margin-bottom: 87px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .main-product__image-wrapper {
+    margin-bottom: 43px;
+  }
+
+  .main-product__title {
+    margin-bottom: 20px;
   }
 }

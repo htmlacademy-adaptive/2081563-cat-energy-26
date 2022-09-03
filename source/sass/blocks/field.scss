@@ -71,7 +71,7 @@ input[type="number"] {
 /* stylelint-enable */
 
 .field--contacts .field__input {
-  padding-right: 39px;
+  padding-right: 41px;
 }
 
 .field--contacts {
@@ -90,10 +90,19 @@ input[type="number"] {
   top: 13px;
 }
 
+.field__label {
+  margin-right: 13px;
+  white-space: nowrap;
+}
+
 @media (min-width: variables.$tablet-width) {
   .field {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .field__label {
+    margin-right: 18px;
   }
 
   .field__input {
@@ -107,5 +116,9 @@ input[type="number"] {
 @media (min-width: variables.$desktop-width) {
   .field {
     flex-grow: 1;
+  }
+
+  .field__label--email {
+    margin-right: 23px;
   }
 }

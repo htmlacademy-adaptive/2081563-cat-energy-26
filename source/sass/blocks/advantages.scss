@@ -44,6 +44,12 @@
   .advantages__item-number {
     display: none;
   }
+
+  .advantages__text {
+    br {
+      display: none;
+    }
+  }
 }
 
 @media (min-width: variables.$tablet-width) {

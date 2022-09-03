@@ -48,7 +48,7 @@
     @include mixins.container-tablet;
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 100px;
+    margin-bottom: 81px;
   }
 
   .main-catalog__another-products {
@@ -58,11 +58,12 @@
 
 @media (min-width: variables.$desktop-width) {
   .main-catalog__wrapper {
-    padding-top: 185px;
+    padding-top: 188px;
   }
 
   .main-catalog__title {
     @include mixins.container-desktop;
+    margin-bottom: 84px;
   }
 
   .main-catalog__promotion {
@@ -71,7 +72,7 @@
 
   .main-catalog__products {
     @include mixins.container-desktop;
-    margin-bottom: 75px;
+    margin-bottom: 77px;
   }
 
   .main-catalog__another-products {
