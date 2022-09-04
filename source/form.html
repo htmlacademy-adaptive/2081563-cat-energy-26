@@ -99,8 +99,10 @@
           </fieldset>
         </section>
         <section class="form__contacts contacts-section">
-          <h2 class="contacts-section__title title">Контактные данные<br>
+          <div class="contacts-section__title">
+          <h2 class="contacts-section__title--text title">Контактные данные<br>
             (владельца кота)</h2>
+          </div>
           <fieldset class="form__list--contacts">
               <label class="field field--contacts" for="form-email">
                 <span class="field__label field__label--email">E-mail:*</span>
@@ -121,15 +123,19 @@
           </fieldset>
         </section>
         <section class="form__comment comment">
-          <h2 class="comment__title title">
+          <div class="comment__title">
+          <h2 class="comment__title--text title">
             Комментарий
           </h2>
+        </div>
           <textarea class="comment__form" name="comments" id="comments">
 Расскажите обо всех повадках кота
           </textarea>
         </section>
         <section class="form__extra extra">
-          <h2 class="extra__title title">Дополнительно</h2>
+          <div class="extra__title">
+          <h2 class="extra__title--text title">Дополнительно</h2>
+        </div>
           <fieldset class="extra__list">
               <label class="control">
                 <input class="visually-hidden control__input" type="checkbox" name="sweetener" checked>

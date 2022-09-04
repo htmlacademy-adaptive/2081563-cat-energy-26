@@ -2,7 +2,6 @@
 @use "../global/mixins.scss";
 
 .another-products__title {
-  @include mixins.container-mobile;
   margin: 0 0 32px;
   position: relative;
 
@@ -12,9 +11,19 @@
     height: 2px;
     background-color: variables.$basic-green;
     right: 0;
-    left: 267px;
+    width: 100%;
     top: 60%;
+    overflow: hidden;
+    z-index: -1;
   }
+}
+
+.another-products__title--text {
+  display: inline-block;
+  background-color: variables.$white;
+  margin: 0;
+  margin-right: 20px;
+  padding: 0 20px;
 }
 
 .another-products__list {
@@ -27,7 +36,8 @@
 
 .another-products__item {
   padding: 13px 0 17px;
-  border-bottom: 1px solid #cdcdcd;
+  border: 1px solid #cdcdcd;
+  border-top: none;
 
   &:first-child {
     border-top: 1px solid #cdcdcd;
@@ -40,22 +50,12 @@
   }
 
   .another-products__title {
-    padding: 0 68px;
     margin-bottom: 80px;
+  }
 
-    &::after {
-      left: 441px;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      height: 2px;
-      background-color: variables.$basic-green;
-      left: 0;
-      top: 60%;
-      width: 30px;
-    }
+  .another-products__title--text {
+    margin: 0 30px;
+    padding: 0 36px 0 37px;
   }
 
   .another-products__item {
@@ -71,19 +71,17 @@
   }
 
   .another-products__title {
-    @include mixins.container-desktop;
     margin-bottom: 80px;
+  }
 
-    &::after {
-      left: 483px;
-    }
-
-    &::before {
-      width: 70px;
-    }
+  .another-products__title--text {
+    margin: 0 70px;
+    padding: 0 35px 0 40px;
   }
 
   .another-products__item {
     padding: 16px 0 15px;
+    border: none;
+    border-bottom: 1px solid #cdcdcd;
   }
 }
