@@ -52,20 +52,26 @@ input[type="number"] {
     }
   }
 
-  &--error {
+  &:invalid {
     outline: 2px solid #ff8282;
 
     & + .field__input--tel-icon {
-      g {
-        fill: #ff8282;
-      }
+      fill: #ff8282;
+  }
+  & + .field__input--email-icon {
+      stroke: #ff8282;
+  }
     }
 
-    & + .field__input--email-icon {
-      path {
-        stroke: #ff8282;
-      }
-    }
+  &:invalid:placeholder-shown {
+    outline-color: #e7e7e7;
+
+    & + .field__input--tel-icon {
+      fill: inherit;
+  }
+  & + .field__input--email-icon {
+      stroke: #222222;
+  }
   }
 }
 /* stylelint-enable */

@@ -20,7 +20,7 @@
   margin-bottom: 22px;
 }
 
-.main-product__image-wrapper {
+.main-product__image-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +30,7 @@
   display: block;
 }
 
-.main-product__title {
+.main-product__title-link {
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -39,6 +39,8 @@
   text-transform: uppercase;
   margin: 0 0 14px;
   padding: 0;
+  text-decoration: none;
+  color: variables.$black;
 }
 
 .main-product__list {
@@ -80,7 +82,7 @@
   margin-bottom: 23px;
 }
 
-.main-product__title--more {
+.main-product__title-link--more {
   margin-bottom: 6px;
 }
 
@@ -90,15 +92,15 @@
 }
 
 @media (max-width: variables.$mobile-width-only) {
-  .main-product__title {
+  .main-product__title-link {
     max-width: 77px;
   }
 
-  .main-product__title--more {
+  .main-product__title-link--more {
     max-width: 100%;
   }
 
-  .main-product__image-wrapper {
+  .main-product__image-link {
     width: 50%;
   }
 
@@ -153,7 +155,7 @@
     flex-direction: column;
   }
 
-  .main-product__image-wrapper {
+  .main-product__image-link {
     align-items: center;
     margin-bottom: 45px;
   }
@@ -176,7 +178,7 @@
     }
   }
 
-  .main-product__title {
+  .main-product__title-link {
     text-align: center;
     font-size: 20px;
     line-height: 24px;
@@ -185,7 +187,7 @@
     margin-bottom: 21px;
   }
 
-  .main-product__title--more {
+  .main-product__title-link--more {
     margin-bottom: 23px;
   }
 
@@ -210,11 +212,11 @@
 }
 
 @media (min-width: variables.$desktop-width) {
-  .main-product__image-wrapper {
+  .main-product__image-link {
     margin-bottom: 43px;
   }
 
-  .main-product__title {
+  .main-product__title-link {
     margin-bottom: 20px;
   }
 }

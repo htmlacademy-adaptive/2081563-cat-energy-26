@@ -1,20 +1,11 @@
 @use "../global/variables.scss";
+@use "../global/mixins.scss";
 
 .extra__title {
   margin-bottom: 35px;
   position: relative;
 
-  &::after {
-    content: "";
-    position: absolute;
-    height: 2px;
-    background-color: variables.$basic-green;
-    right: 0;
-    top: 50%;
-    width: 100%;
-    overflow: hidden;
-    z-index: -1;
-  }
+  @include mixins.green-line;
 }
 
 .extra__title--text {
