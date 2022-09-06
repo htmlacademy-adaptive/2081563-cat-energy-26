@@ -87,6 +87,7 @@
   height: 2px;
   background-color: variables.$black;
   position: relative;
+  transition: width 0.2s ease-out 0s;
 
   &::after {
     content: "";
