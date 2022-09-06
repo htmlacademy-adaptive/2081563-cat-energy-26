@@ -1,3 +1,5 @@
+@use "../global/variables.scss";
+
 @mixin container-mobile {
   padding: 0 20px;
 }
@@ -16,4 +18,18 @@
 
 @mixin custom-font {
   font-family: "Oswald", sans-serif;
+}
+
+@mixin green-line {
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: variables.$basic-green;
+    right: 0;
+    top: 50%;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
 }

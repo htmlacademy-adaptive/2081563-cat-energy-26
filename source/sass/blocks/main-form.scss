@@ -15,6 +15,7 @@
   font-size: 36px;
   line-height: 36px;
   margin: 0 0 54px;
+  margin-bottom: 37px;
 }
 
 .main-form__description {
@@ -25,7 +26,8 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  max-width: 230px;
+  max-width: 268px;
+  text-transform: uppercase;
 }
 
 @media (max-width: variables.$mobile-width-only) {
@@ -36,7 +38,7 @@
 
 @media (min-width: variables.$tablet-width) {
   .main-form__container {
-    padding-top: 64px;
+    padding-top: 61px;
     padding-bottom: 72px;
   }
 
@@ -51,7 +53,7 @@
     margin: 0 70px 66px;
     font-size: 20px;
     line-height: 30px;
-    max-width: 313px;
+    max-width: 328px;
     padding: 0;
   }
 }

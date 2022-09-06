@@ -52,7 +52,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 15px;
   text-transform: uppercase;
   margin: 0 0 29px;
   text-align: center;
@@ -88,7 +88,7 @@
     color: variables.$black;
     text-align: left;
     margin-left: 87px;
-    margin-bottom: 41px;
+    margin-bottom: 34px;
     max-width: 420px;
   }
 
@@ -98,20 +98,26 @@
     color: variables.$black;
     text-align: left;
     margin-left: 87px;
-    margin-bottom: 20px;
+    margin-bottom: 44px;
   }
 
   .offer__to-catalog {
-    position: absolute;
-    bottom: 526px;
     width: 244px;
-    left: 91px;
+    padding: 7px 0;
+    margin-left: 90px;
+
+    span {
+      font-size: 20px;
+    }
   }
 
   .offer__image {
     width: 709px;
     height: 609px;
     margin: 0 auto;
+    position: absolute;
+    z-index: -1;
+    top: 261px;
   }
 }
 
@@ -134,24 +140,22 @@
   .offer__wrapper {
     margin: 0 110px;
     padding-top: 223px;
-    padding-bottom: 54px;
   }
 
   .offer__slogan {
     margin-left: 80px;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     max-width: 500px;
   }
 
   .offer__description {
     margin-left: 80px;
-    margin-bottom: 237px;
+    margin-bottom: 47px;
     max-width: 500px;
   }
 
   .offer__to-catalog {
-    bottom: 185px;
-    left: 80px;
+    margin-left: 80px;
   }
 
   .offer__image {
@@ -160,5 +164,6 @@
     right: 220px;
     width: 552px;
     height: 499px;
+    z-index: 0;
   }
 }

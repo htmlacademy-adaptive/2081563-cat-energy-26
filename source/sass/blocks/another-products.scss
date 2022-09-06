@@ -2,8 +2,7 @@
 @use "../global/mixins.scss";
 
 .another-products__title {
-  @include mixins.container-mobile;
-  margin: 0 0 36px;
+  margin: 0 0 32px;
   position: relative;
 
   &::after {
@@ -12,9 +11,19 @@
     height: 2px;
     background-color: variables.$basic-green;
     right: 0;
-    left: 267px;
-    top: 50%;
+    width: 100%;
+    top: 60%;
+    overflow: hidden;
+    z-index: -1;
   }
+}
+
+.another-products__title--text {
+  display: inline-block;
+  background-color: variables.$white;
+  margin: 0;
+  margin-right: 20px;
+  padding: 0 20px;
 }
 
 .another-products__list {
@@ -26,8 +35,8 @@
 }
 
 .another-products__item {
-  padding: 13px 0 19px;
-  border-bottom: 1px solid #cdcdcd;
+  padding: 13px 0 17px;
+  border-top: none;
 
   &:first-child {
     border-top: 1px solid #cdcdcd;
@@ -40,26 +49,17 @@
   }
 
   .another-products__title {
-    @include mixins.container-tablet-form;
     margin-bottom: 80px;
+  }
 
-    &::after {
-      left: 441px;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      height: 2px;
-      background-color: variables.$basic-green;
-      left: 0;
-      top: 50%;
-      width: 30px;
-    }
+  .another-products__title--text {
+    margin: 0 30px;
+    padding: 0 36px 0 37px;
   }
 
   .another-products__item {
-    padding: 26px 38px 28px;
+    padding: 26px 38px 26px;
+    border: 1px solid #cdcdcd;
   }
 }
 
@@ -71,19 +71,17 @@
   }
 
   .another-products__title {
-    @include mixins.container-desktop;
-    margin-bottom: 81px;
+    margin-bottom: 80px;
+  }
 
-    &::after {
-      left: 483px;
-    }
-
-    &::before {
-      width: 70px;
-    }
+  .another-products__title--text {
+    margin: 0 70px;
+    padding: 0 35px 0 40px;
   }
 
   .another-products__item {
-    padding: 15px 0 17px;
+    padding: 16px 0 15px;
+    border: none;
+    border-bottom: 1px solid #cdcdcd;
   }
 }

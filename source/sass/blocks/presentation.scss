@@ -1,12 +1,24 @@
 @use "../global/variables.scss";
 
 .presentation {
-  background-color: #eaeaea;
+  background-color: transparent;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: variables.$basic-grey;
+    z-index: -1;
+  }
 }
 
 .presentation__wrapper {
   margin: 0 20px;
-  padding-top: 25px;
+  padding-top: 32px;
   padding-bottom: 40px;
 }
 
@@ -15,6 +27,7 @@
   gap: 32px;
   margin-bottom: 34px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .presentation__list-total-wrapper {
@@ -22,7 +35,7 @@
 }
 
 .presentation__title {
-  margin: 0 0 40px;
+  margin: 0 0 47px;
 }
 
 .presentation__description {
@@ -72,6 +85,7 @@
   font-size: 14px;
   line-height: 20px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 @media (max-width: variables.$mobile-width-only) {
@@ -84,7 +98,10 @@
 @media (min-width: variables.$tablet-width) {
   .presentation {
     border-top: 1px solid #e6e6e6;
-    background-image: linear-gradient(360deg, variables.$basic-grey 462px, variables.$white 462px);
+
+    &::after {
+      top: 618px;
+    }
   }
 
   .presentation__wrapper {
@@ -99,6 +116,7 @@
 
   .presentation__description {
     margin-bottom: 54px;
+    margin-right: 15px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -110,16 +128,17 @@
   .presentation__list-total-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 104px;
+    margin-bottom: 71px;
   }
 
   .presentation__list {
     width: 162px;
-    height: 77px;
+    height: 71px;
   }
 
   .presentation__description-details {
     font-size: 30px;
+    margin-bottom: 6px;
   }
 
   .presentation__description-title {
@@ -132,6 +151,11 @@
     font-size: 20px;
     line-height: 20px;
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    margin-top: 11px;
+    letter-spacing: 0.2px;
+    gap: 8px;
   }
 
   .presentation__slider {
@@ -142,6 +166,10 @@
 @media (min-width: variables.$desktop-width) {
   .presentation {
     border: none;
+
+    &::after {
+      top: 180px;
+    }
   }
 
   .presentation__wrapper {
@@ -159,6 +187,7 @@
   }
 
   .presentation__description {
+    margin: 0;
     margin-bottom: 69px;
     width: 436px;
   }
@@ -179,6 +208,9 @@
 
   .presentation__total {
     text-align: left;
+    max-width: 436px;
+    flex-direction: row;
+    gap: 0;
 
     &-price {
       margin-left: 63px;

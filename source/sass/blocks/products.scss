@@ -15,15 +15,18 @@
   .products__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
+    column-gap: 60px;
+    row-gap: 59px;
   }
 }
 
 @media (min-width: variables.$desktop-width) {
   .products__list {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 245px);
     column-gap: 80px;
-    row-gap: 63px;
+    row-gap: 64px;
+    width: 1220px;
+    margin: 0 auto;
   }
 
   .products__wrapper {

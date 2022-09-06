@@ -1,19 +1,19 @@
 @use "../global/variables.scss";
+@use "../global/mixins.scss";
 
 .comment__title {
   margin: 0 0 38px;
-  padding: 0 20px;
   position: relative;
 
-  &::after {
-    content: "";
-    position: absolute;
-    height: 2px;
-    background-color: variables.$basic-green;
-    right: 0;
-    left: 163px;
-    top: 50%;
-  }
+  @include mixins.green-line;
+}
+
+.comment__title--text {
+  background-color: variables.$white;
+  display: inline-block;
+  margin: 0;
+  margin-right: 20px;
+  padding: 0 20px;
 }
 
 .comment__form {
@@ -37,35 +37,25 @@
   }
 
   &:focus {
-    border: none;
+    border-color: transparent;
     outline: 2px solid #444444;
   }
 }
 
 @media (min-width: variables.$tablet-width) {
   .comment__title {
-    padding: 0 69px;
-    margin-bottom: 67px;
+    margin-bottom: 73px;
+  }
 
-    &::after {
-      left: 289px;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 0;
-      width: 30px;
-      height: 2px;
-      background-color: variables.$basic-green;
-    }
+  .comment__title--text {
+    margin: 0 30px;
+    padding: 0 40px;
   }
 
   .comment__form {
-    width: calc(100% - 60px);
+    width: calc(100% - 138px);
     height: 174px;
-    margin: 0 30px;
+    margin: 0 71px;
     padding: 10px 15px;
     font-size: 20px;
     line-height: 30px;
@@ -74,19 +64,16 @@
 
 @media (min-width: variables.$desktop-width) {
   .comment__title {
-    padding: 0 110px;
+    margin-bottom: 71px;
+  }
 
-    &::after {
-      left: 332px;
-    }
-
-    &::before {
-      width: 70px;
-    }
+  .comment__title--text {
+    margin: 0 70px;
   }
 
   .comment__form {
     width: calc(100% - 220px);
     margin: 0 110px;
+    padding: 8px 20px;
   }
 }

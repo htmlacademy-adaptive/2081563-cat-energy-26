@@ -1,19 +1,19 @@
 @use "../global/variables.scss";
+@use "../global/mixins.scss";
 
 .extra__title {
-  padding: 0 20px;
-  margin-bottom: 34px;
+  margin-bottom: 35px;
   position: relative;
 
-  &::after {
-    content: "";
-    position: absolute;
-    height: 2px;
-    background-color: variables.$basic-green;
-    right: 0;
-    left: 184px;
-    top: 50%;
-  }
+  @include mixins.green-line;
+}
+
+.extra__title--text {
+  background-color: variables.$white;
+  display: inline-block;
+  margin: 0;
+  margin-right: 20px;
+  padding: 0 20px;
 }
 
 .extra__list {
@@ -26,23 +26,12 @@
 
 @media (min-width: variables.$tablet-width) {
   .extra__title {
-    padding: 0 69px;
-    margin: 0 0 62px;
+    margin: 0 0 59px;
+  }
 
-    &::after {
-      top: 50%;
-      left: 322px;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 0;
-      width: 30px;
-      height: 2px;
-      background-color: variables.$basic-green;
-    }
+  .extra__title--text {
+    padding: 0 40px;
+    margin: 0 30px;
   }
 
   .extra__list {
@@ -56,17 +45,11 @@
 
 @media (min-width: variables.$desktop-width) {
   .extra__title {
-    padding: 0 110px;
-    margin-bottom: 62px;
+    margin-bottom: 59px;
+  }
 
-    &::after {
-      top: 50%;
-      left: 362px;
-    }
-
-    &::before {
-      width: 40px;
-    }
+  .extra__title--text {
+    margin: 0 70px;
   }
 
   .extra__list {

@@ -68,15 +68,15 @@
           <fieldset class="form__list form__list--questionnaire">
               <label class="field" for="form-name">
                 <span class="field__label">ИМЯ:*</span>
-              <input class="field__input" type="text" id="form-name" name="field-name" value="барсик" required>
+              <input class="field__input field__input--error" type="text" id="form-name" name="field-name" placeholder="Барсик" required>
             </label>
               <label class="field" for="form-weight">
                 <span class="field__label">Вес (кг):*</span>
-              <input class="field__input" type="number" id="form-weight" name="field-weight" value="7" required>
+              <input class="field__input" type="number" id="form-weight" name="field-weight" placeholder="7" required>
               </label>
               <label class="field" for="form-age">
-                <span class="field__label">Возраст (лет)</span>
-              <input class="field__input" type="number" id="form-age" name="field-age" value="7">
+                <span class="field__label">Возраст (лет):</span>
+              <input class="field__input" type="number" id="form-age" name="field-age" placeholder="7">
               </label>
           </fieldset>
           <fieldset class="form__list form__list--radio">
@@ -87,7 +87,7 @@
                 <span class="control__label">похудение</span>
               </label>
               <label class="control">
-                <input class="visually-hidden control__input" type="radio" name="questionnaire" value="mass-gain">
+                <input class="visually-hidden control__input" type="radio" name="questionnaire" value="mass-gain" disabled>
                 <span class="control__mark control__mark--radio"></span>
                 <span class="control__label">Набор массы</span>
               </label>
@@ -99,21 +99,23 @@
           </fieldset>
         </section>
         <section class="form__contacts contacts-section">
-          <h2 class="contacts-section__title title">Контактные данные<br>
+          <div class="contacts-section__title">
+          <h2 class="contacts-section__title--text title">Контактные данные<br>
             (владельца кота)</h2>
+          </div>
           <fieldset class="form__list--contacts">
               <label class="field field--contacts" for="form-email">
-                <span class="field__label">E-mail:*</span>
+                <span class="field__label field__label--email">E-mail:*</span>
               <input class="field__input field__input--email" type="email" id="form-email" name="field-email"
-                value="kuklachev@gmail.com" required>
-                <svg class="field__input--email-icon" width="19" height="14"fill="none" stroke="#222">
+                placeholder="kuklachev@gmail.com" required>
+                <svg class="field__input--email-icon" width="19" height="14" fill="none" stroke="#222">
                   <use href="img/sprite.svg#email"></use>
                 </svg>
               </label>
               <label class="field field--contacts" for="form-tel">
                 <span class="field__label">Телефон:*</span>
               <input class="field__input field__input--tel" type="tel" id="form-tel" name="field-tel"
-                value="8 (960) 900-60-90" required>
+                placeholder="8 (960) 900-60-90" required>
                 <svg class="field__input--tel-icon" width="20" height="21" fill="#000">
                   <use href="img/sprite.svg#phone"></use>
                 </svg>
@@ -121,15 +123,19 @@
           </fieldset>
         </section>
         <section class="form__comment comment">
-          <h2 class="comment__title title">
+          <div class="comment__title">
+          <h2 class="comment__title--text title">
             Комментарий
           </h2>
-          <textarea class="comment__form" name="comments" id="comments">
-Расскажите обо всех повадках кота
-          </textarea>
+        </div>
+        <label class="comment" for="comments">
+          <textarea class="comment__form" name="comments" id="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </label>
         </section>
         <section class="form__extra extra">
-          <h2 class="extra__title title">Дополнительно</h2>
+          <div class="extra__title">
+          <h2 class="extra__title--text title">Дополнительно</h2>
+        </div>
           <fieldset class="extra__list">
               <label class="control">
                 <input class="visually-hidden control__input" type="checkbox" name="sweetener" checked>
@@ -137,7 +143,7 @@
                 <span class="control__label">сахарозаменитель</span>
               </label>
               <label class="control">
-                <input class="visually-hidden control__input" type="checkbox" name="drinking-water">
+                <input class="visually-hidden control__input" type="checkbox" name="drinking-water" disabled>
                 <span class="control__mark control__mark--checkbox"></span>
                 <span class="control__label">питьевая вода</span>
               </label>
@@ -167,13 +173,13 @@
   <footer class="main-footer">
     <section class="main-footer__contacts contacts">
       <div class="contacts__wrapper">
-      <h2 class="visually-hidden">Контактные данные.</h2>
-      <b class="contacts__slogan">приглашаем к сотрудничеству дилеров!</b>
-      <address class="contacts__address">ул. Большая
-        Конюшенная, д. 19/8
-        <span class="contacts__city">
-        Санкт-Петербург</span></address>
-      </div>
+        <h2 class="visually-hidden">Контактные данные.</h2>
+        <b class="contacts__slogan">приглашаем<br> к сотрудничеству дилеров!</b>
+        <address class="contacts__address">ул. Большая
+          Конюшенная, д. 19/8
+          <span class="contacts__city">
+          Санкт-Петербург</span></address>
+        </div>
     <iframe class="main-footer__frame"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.617229376069!2d30.322822093221312!3d59.938493445474826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1659069154588!5m2!1sru!2s"
         width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy"

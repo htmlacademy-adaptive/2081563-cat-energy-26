@@ -14,7 +14,7 @@
 }
 
 .form__extra {
-  margin-bottom: 41px;
+  margin-bottom: 38px;
 }
 
 .form__list {
@@ -22,20 +22,15 @@
   padding: 0;
 }
 
-.field__label {
-  margin-right: 13px;
-  white-space: nowrap;
-}
-
 .form__list--questionnaire {
-  padding: 0 20px 27px;
+  padding: 0 18px 23px;
   display: flex;
   flex-direction: column;
   gap: 14px;
 }
 
 .form__list--radio {
-  padding: 22px 20px 19px;
+  padding: 28px 20px 23px;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -58,6 +53,7 @@
 .form__submit {
   margin-bottom: 21px;
   width: 100%;
+  font-size: 16px;
 }
 
 .form__legend {
@@ -93,6 +89,7 @@
     width: 282px;
     padding: 7px 0;
     margin: 0;
+    font-size: 20px;
   }
 
   .form__small {
@@ -123,7 +120,7 @@
 
   .form__list--contacts {
     gap: 20px;
-    padding: 0 30px;
+    padding: 0 68px;
   }
 
   .form__comment {
@@ -137,15 +134,16 @@
 
 @media (min-width: variables.$desktop-width) {
   .form__list--contacts {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     padding: 0 110px;
-    gap: 78px;
+    gap: 76px;
   }
 
   .form__submit-wrapper {
     @include mixins.container-desktop;
-    gap: 89px;
+    gap: 82px;
   }
 
   .form__submit {
@@ -172,5 +170,9 @@
 
   .form__extra {
     margin-bottom: 66px;
+  }
+
+  .form__questionnaire {
+    margin-bottom: 67px;
   }
 }

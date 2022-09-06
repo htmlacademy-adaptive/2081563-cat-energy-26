@@ -17,11 +17,11 @@
 }
 
 .main-catalog__products {
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 }
 
 .main-catalog__another-products {
-  margin-bottom: 35px;
+  margin-bottom: 39px;
   position: relative;
 }
 
@@ -36,10 +36,19 @@
 }
 
 @media (min-width: variables.$tablet-width) {
+  .main-catalog__wrapper {
+    padding-top: 60px;
+  }
+
+  .main-catalog__products {
+    margin-bottom: 68px;
+  }
+
   .main-catalog__title {
     @include mixins.container-tablet;
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 81px;
   }
 
   .main-catalog__another-products {
@@ -63,7 +72,7 @@
 
   .main-catalog__products {
     @include mixins.container-desktop;
-    margin-bottom: 75px;
+    margin-bottom: 77px;
   }
 
   .main-catalog__another-products {

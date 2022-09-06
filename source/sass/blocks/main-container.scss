@@ -11,6 +11,7 @@
 @media (min-width: variables.$tablet-width) {
   .main-container__offer {
     margin: 0;
+    padding-bottom: 525px;
   }
 
   .main-container__advantages {
@@ -20,10 +21,11 @@
 
 @media (min-width: variables.$desktop-width) {
   .main-container__offer {
-    margin-bottom: 82px;
+    margin-bottom: 81px;
+    padding-bottom: 184px;
   }
 
   .main-container__advantages {
-    margin-bottom: 126px;
+    margin-bottom: 84px;
   }
 }

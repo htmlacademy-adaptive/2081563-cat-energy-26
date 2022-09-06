@@ -20,19 +20,20 @@
 .product__attribute {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 @media (min-width: variables.$tablet-width) {
   .product {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 25px;
+    row-gap: 22px;
   }
 
   .product__button {
     grid-row: 2 / 3;
     grid-column: 1 / 3;
+    width: 100%;
   }
 
   .product__title {
@@ -50,6 +51,7 @@
     justify-content: flex-end;
     font-size: 16px;
     line-height: 20px;
+    margin-top: 3px;
   }
 }
 
@@ -57,16 +59,24 @@
   .product {
     width: 896px;
     grid-template-columns: repeat(3, 1fr);
+    align-items: baseline;
   }
 
   .product__button {
     width: 244px;
+    justify-self: flex-end;
     grid-row: inherit;
     grid-column: inherit;
-    justify-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .product__attribute {
     justify-content: space-between;
+  }
+
+  .product__title {
+    min-width: 325px;
   }
 }

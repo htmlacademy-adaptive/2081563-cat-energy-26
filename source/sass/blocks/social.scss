@@ -9,7 +9,7 @@
 .social-footer__logo-name {
   display: block;
   width: 128px;
-  margin: 0 auto 32px;
+  margin: 0 auto 27px;
 
   &:hover {
     opacity: 0.8;
@@ -37,11 +37,12 @@
 
 .social__list {
   margin: 0 0 22px;
-  padding: 20px 0;
+  padding: 23px 0 13px;
   list-style-type: none;
   display: flex;
   justify-content: center;
   gap: 24px;
+  flex-wrap: wrap;
 }
 
 @media (max-width: variables.$mobile-width-only) {
@@ -57,10 +58,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
   }
 
   .social-footer__logo-name {
     margin: 0;
+    margin-right: 28px;
   }
 
   .social__list {
