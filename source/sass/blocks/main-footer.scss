@@ -23,6 +23,12 @@
   height: 362px;
 }
 
+.main-footer__frame-image {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
 @media (min-width: variables.$tablet-width) {
   .main-footer__frame {
     height: 400px;

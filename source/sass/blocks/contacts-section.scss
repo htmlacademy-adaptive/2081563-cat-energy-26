@@ -1,7 +1,6 @@
 @use "../global/variables.scss";
 
-.contacts-section__title {
-  margin: 0 0 35px;
+.contacts-section {
   position: relative;
 
   &::after {
@@ -11,13 +10,17 @@
     background-color: variables.$basic-green;
     right: 0;
     width: 100%;
-    top: 40%;
+    top: 20px;
     overflow: hidden;
     z-index: -1;
   }
 }
 
-.contacts-section__title--text {
+.contacts-section__title {
+  margin: 0 0 35px;
+}
+
+.contacts-section__title-text {
   background-color: variables.$white;
   display: inline-block;
   padding: 0 20px;
@@ -39,7 +42,7 @@
     }
   }
 
-  .contacts-section__title--text {
+  .contacts-section__title-text {
     margin: 0 30px;
     padding: 0 40px;
   }
@@ -47,11 +50,13 @@
 
 @media (min-width: variables.$desktop-width) {
   .contacts-section__title {
+    width: 1220px;
+    margin: 0 auto;
     margin-bottom: 76px;
   }
 
-  .contacts-section__title--text {
-    margin: 0 70px;
+  .contacts-section__title-text {
+    margin-left: -40px;
     padding: 0 40px;
   }
 }

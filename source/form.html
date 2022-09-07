@@ -28,8 +28,10 @@
       <img class="main-header__name-image" src="img/header/logo-name.svg" width="101" height="18"
         alt="Магазин Cat Energy">
     </a>
-    <button class="main-nav__toogle main-nav__toogle--nojs" type="button">
-      <span class="visually-hidden">Открыть меню.</span>
+    <button class="main-header__toogle main-header__toogle--nojs main-header__toogle--open main-header__toogle--closed" type="button">
+      <svg class="main-header__close-menu" aria-hidden="true" focusable="false" width="20" height="20">
+        <use href="img/sprite.svg#closed"></use>
+      </svg>
       <svg class="toogle-burger" aria-hidden="true" focusable="false" width="24" height="18">
         <use href="img/sprite.svg#burger-menu"></use>
       </svg>
@@ -100,15 +102,15 @@
         </section>
         <section class="form__contacts contacts-section">
           <div class="contacts-section__title">
-          <h2 class="contacts-section__title--text title">Контактные данные<br>
+          <h2 class="contacts-section__title-text title">Контактные данные<br>
             (владельца кота)</h2>
           </div>
-          <fieldset class="form__list--contacts">
+          <fieldset class="form__list-contacts">
               <label class="field field--contacts" for="form-email">
                 <span class="field__label field__label--email">E-mail:*</span>
               <input class="field__input field__input--email" type="email" id="form-email" name="field-email"
                 placeholder="kuklachev@gmail.com" required>
-                <svg class="field__input--email-icon" width="19" height="14" fill="none" stroke="#222">
+                <svg class="field__input-email-icon" width="19" height="14" fill="none" stroke="#222">
                   <use href="img/sprite.svg#email"></use>
                 </svg>
               </label>
@@ -116,15 +118,15 @@
                 <span class="field__label">Телефон:*</span>
               <input class="field__input field__input--tel" type="tel" id="form-tel" name="field-tel"
                 placeholder="8 (960) 900-60-90" required>
-                <svg class="field__input--tel-icon" width="20" height="21" fill="#000">
+                <svg class="field__input-tel-icon" width="20" height="21" fill="#000">
                   <use href="img/sprite.svg#phone"></use>
                 </svg>
               </label>
           </fieldset>
         </section>
-        <section class="form__comment comment">
+        <section class="form__comment comment-section">
           <div class="comment__title">
-          <h2 class="comment__title--text title">
+          <h2 class="comment__title-text title">
             Комментарий
           </h2>
         </div>
@@ -134,7 +136,7 @@
         </section>
         <section class="form__extra extra">
           <div class="extra__title">
-          <h2 class="extra__title--text title">Дополнительно</h2>
+          <h2 class="extra__title-text title">Дополнительно</h2>
         </div>
           <fieldset class="extra__list">
               <label class="control">
@@ -187,7 +189,7 @@
       </section>
       <div class="main-footer__social">
         <div class="social">
-        <a class="social-footer__logo-name logo-name" href="index.html">
+        <a class="social__footer-logo-name logo-name" href="index.html">
           <img class="main-footer__name-image" src="img/footer/logo-name.svg" width="128" height="24"
             alt="Магазин Cat Energy.">
         </a>

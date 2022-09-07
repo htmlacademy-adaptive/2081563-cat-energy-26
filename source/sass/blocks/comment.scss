@@ -1,14 +1,17 @@
 @use "../global/variables.scss";
 @use "../global/mixins.scss";
 
-.comment__title {
-  margin: 0 0 38px;
+.comment-section {
   position: relative;
 
   @include mixins.green-line;
 }
 
-.comment__title--text {
+.comment__title {
+  margin: 0 0 38px;
+}
+
+.comment__title-text {
   background-color: variables.$white;
   display: inline-block;
   margin: 0;
@@ -47,7 +50,7 @@
     margin-bottom: 73px;
   }
 
-  .comment__title--text {
+  .comment__title-text {
     margin: 0 30px;
     padding: 0 40px;
   }
@@ -64,16 +67,19 @@
 
 @media (min-width: variables.$desktop-width) {
   .comment__title {
+    margin: 0 auto;
+    width: 1220px;
     margin-bottom: 71px;
   }
 
-  .comment__title--text {
-    margin: 0 70px;
+  .comment__title-text {
+    margin: 0;
+    margin-left: -40px;
   }
 
   .comment__form {
-    width: calc(100% - 220px);
-    margin: 0 110px;
+    width: 1220px;
+    margin: 0 auto;
     padding: 8px 20px;
   }
 }

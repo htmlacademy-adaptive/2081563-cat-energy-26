@@ -63,7 +63,8 @@
 
 @media (min-width: variables.$desktop-width) {
   .main-header__wrapper {
-    margin: 0 110px;
+    margin: 0 auto;
+    width: 1220px;
     position: absolute;
     background-color: transparent;
     top: 53px;

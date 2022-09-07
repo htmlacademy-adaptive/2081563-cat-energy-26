@@ -62,8 +62,15 @@
   }
 
   .main-catalog__title {
-    @include mixins.container-desktop;
-    margin-bottom: 84px;
+    margin: 0 auto 84px;
+    padding: 0;
+    width: 1220px;
+  }
+
+  .main-catalog__promotion-wrapper {
+    width: 1220px;
+    position: relative;
+    margin: 0 auto;
   }
 
   .main-catalog__promotion {

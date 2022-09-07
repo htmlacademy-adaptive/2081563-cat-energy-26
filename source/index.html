@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml">
@@ -27,11 +29,11 @@
       <img class="main-header__name-image" src="img/header/logo-name.svg" width="101" height="18"
         alt="Магазин Cat Energy">
     </a>
-    <button class="main-nav__toogle main-nav__toogle--nojs main-nav__toogle--open main-nav__toogle--closed" type="button">
-      <svg class="close-menu" aria-hidden="true" focusable="false" width="20" height="20">
+    <button class="main-header__toogle main-header__toogle--nojs main-header__toogle--open main-header__toogle--closed" type="button">
+      <svg class="main-header__close-menu" aria-hidden="true" focusable="false" width="20" height="20">
         <use href="img/sprite.svg#closed"></use>
       </svg>
-      <svg class="toogle-burger" aria-hidden="true" focusable="false" width="24" height="18">
+      <svg class="main-header__toogle-burger" aria-hidden="true" focusable="false" width="24" height="18">
         <use href="img/sprite.svg#burger-menu"></use>
       </svg>
     </button>
@@ -88,7 +90,7 @@
           <source media="(min-width: 768px)" srcset="img/main/cup/cup-tablet.png 1x, img/main/cup/cup-tablet@2x.png 2x">
         <img class="offer__image" src="img/main/cup/cup-mobile.png" srcset="img/main/cup/cup-mobile@2x.png 2x" width="280" height="270" alt="Кошачий корм.">
         </picture>
-        <a class="offer__to-catalog button" href="catalog.html">
+        <a class="offer__to-catalog button" href="form.html">
           <span>подобрать программу</span>
         </a>
       </div>
@@ -146,7 +148,7 @@
                 <use href="img/sprite.svg#leaf"></use>
               </svg>
             </span>
-            <p class="advantages__text advantages__item--food">Функциональное питание
+            <p class="advantages__text">Функциональное питание
               содержит только полезные
               питательные вещества.</p>
               <span class="advantages__item-number advantages__item-number--first">1</span>
@@ -157,7 +159,7 @@
                 <use href="img/sprite.svg#powder"></use>
               </svg>
             </span>
-            <p class="advantages__text advantages__item--powder">Выпускается в виде порошка,
+            <p class="advantages__text">Выпускается в виде порошка,
               который нужно лишь залить
               кипятком и готово.</p>
               <span class="advantages__item-number">2</span>
@@ -168,7 +170,7 @@
                 <use href="img/sprite.svg#eat"></use>
               </svg>
             </span>
-            <p class="advantages__text advantages__item--replacement">Замените один-два приема
+            <p class="advantages__text">Замените один-два приема
               обычной еды на наше
               функциональное питание.</p>
               <span class="advantages__item-number">3</span>
@@ -179,7 +181,7 @@
                 <use href="img/sprite.svg#clock"></use>
               </svg>
             </span>
-            <p class="advantages__text advantages__item--time">Уже через месяц наслаждайтесь изменениями к лучшему
+            <p class="advantages__text">Уже через месяц наслаждайтесь изменениями к лучшему
               <br>вашего питомца!</p>
             <span class="advantages__item-number">4</span>
           </li>
@@ -240,7 +242,7 @@
     </section>
   </main>
   <footer class="main-footer">
-    <section class="main-footer__contacts--index contacts">
+    <section class="main-footer__contacts main-footer__contacts--index contacts">
       <div class="contacts__wrapper">
       <h2 class="visually-hidden">Контактные данные.</h2>
       <b class="contacts__slogan">приглашаем<br> к сотрудничеству дилеров!</b>
@@ -249,14 +251,24 @@
         <span class="contacts__city">
         Санкт-Петербург</span></address>
       </div>
+      <div class="main-footer__frame-wrapper">
+        <picture>
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/location/location-desktop.webp 1x, img/location/location-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/location/location-tablet.webp 1x, img/location/location-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/location/location-mobile.webp 1x, img/location/location-mobile@2x.webp 2x">
+          <source media="(min-width: 1440px)" srcset="img/location/location-desktop.jpg 1x, img/location/location-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/location/location-tablet.jpg 1x, img/location/location-mobile@2x.jpg 2x">
+        <img class="main-footer__frame-image" src="img/location/location-mobile.jpg" srcset="img/location/location-mobile@2x.jpg 2x" width="320" height="362" alt="Локация.">
+        </picture>
     <iframe class="main-footer__frame"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.617229376069!2d30.322822093221312!3d59.938493445474826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1659069154588!5m2!1sru!2s"
         width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
       </section>
     <div class="main-footer__social">
       <div class="social">
-      <a class="social-footer__logo-name logo-name">
+      <a class="social__footer-logo-name logo-name">
         <img class="main-footer__name-image" src="img/footer/logo-name.svg" width="128" height="24"
           alt="Магазин Cat Energy.">
       </a>
