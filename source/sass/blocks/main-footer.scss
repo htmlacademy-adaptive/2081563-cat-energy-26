@@ -23,10 +23,22 @@
   height: 362px;
 }
 
+.main-footer__frame--nojs {
+  display: none;
+}
+
 .main-footer__frame-image {
   display: block;
   width: 100%;
   object-fit: cover;
+}
+
+.has-js {
+  .main-footer__frame-wrapper {
+    .main-footer__frame-image {
+      display: none;
+    }
+  }
 }
 
 @media (min-width: variables.$tablet-width) {

@@ -1,9 +1,10 @@
 let navMain = document.querySelector('.main-nav__wrapper');
 let navToggle = document.querySelector('.main-header__toogle');
+let footerFrame = document.querySelector('.main-footer__frame');
 
 navMain.classList.remove('main-nav__wrapper--nojs');
 navToggle.classList.remove('main-header__toogle--nojs');
-
+footerFrame.classList.remove('main-footer__frame--nojs');
 
 navToggle.addEventListener('click', function () {
   if (navMain.classList.contains('main-nav__wrapper--closed')) {
