@@ -28,9 +28,11 @@
       <img class="main-header__name-image" src="img/header/logo-name.svg" width="101" height="18"
         alt="Магазин Cat Energy">
     </a>
-    <button class="main-nav__toogle main-nav__toogle--nojs" type="button">
-      <span class="visually-hidden">Открыть меню.</span>
-      <svg class="toogle-burger" aria-hidden="true" focusable="false" width="24" height="18">
+    <button class="main-header__toogle main-header__toogle--nojs main-header__toogle--open main-header__toogle--closed" type="button">
+      <svg class="main-header__close-menu" aria-hidden="true" focusable="false" width="20" height="20">
+        <use href="img/sprite.svg#closed"></use>
+      </svg>
+      <svg class="main-header__toogle-burger" aria-hidden="true" focusable="false" width="24" height="18">
         <use href="img/sprite.svg#burger-menu"></use>
       </svg>
     </button>
@@ -61,7 +63,7 @@
   <main class="main-form">
     <div class="main-form__container">
       <h1 class="main-form__title">Подбор программы</h1>
-      <p class="main-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <p class="main-form__description">Заполните анкету, и мы подберем <br>программу питания для вашего кота</p>
       <form class="form" action="https://echo.htmlacademy.ru/" method="post">
         <section class="form__questionnaire questionnaire">
           <h2 class="visually-hidden">Анкета.</h2>
@@ -100,15 +102,15 @@
         </section>
         <section class="form__contacts contacts-section">
           <div class="contacts-section__title">
-          <h2 class="contacts-section__title--text title">Контактные данные<br>
+          <h2 class="contacts-section__title-text title">Контактные данные<br>
             (владельца кота)</h2>
           </div>
-          <fieldset class="form__list--contacts">
+          <fieldset class="form__list-contacts">
               <label class="field field--contacts" for="form-email">
                 <span class="field__label field__label--email">E-mail:*</span>
               <input class="field__input field__input--email" type="email" id="form-email" name="field-email"
                 placeholder="kuklachev@gmail.com" required>
-                <svg class="field__input--email-icon" width="19" height="14" fill="none" stroke="#222">
+                <svg class="field__input-email-icon" width="19" height="14" fill="none" stroke="#222">
                   <use href="img/sprite.svg#email"></use>
                 </svg>
               </label>
@@ -116,15 +118,15 @@
                 <span class="field__label">Телефон:*</span>
               <input class="field__input field__input--tel" type="tel" id="form-tel" name="field-tel"
                 placeholder="8 (960) 900-60-90" required>
-                <svg class="field__input--tel-icon" width="20" height="21" fill="#000">
+                <svg class="field__input-tel-icon" width="20" height="21" fill="#000">
                   <use href="img/sprite.svg#phone"></use>
                 </svg>
               </label>
           </fieldset>
         </section>
-        <section class="form__comment comment">
-          <div class="comment__title">
-          <h2 class="comment__title--text title">
+        <section class="form__comment comment-section">
+          <div class="comment-section__title">
+          <h2 class="comment-section__title-text title">
             Комментарий
           </h2>
         </div>
@@ -134,7 +136,7 @@
         </section>
         <section class="form__extra extra">
           <div class="extra__title">
-          <h2 class="extra__title--text title">Дополнительно</h2>
+          <h2 class="extra__title-text title">Дополнительно</h2>
         </div>
           <fieldset class="extra__list">
               <label class="control">
@@ -180,14 +182,24 @@
           <span class="contacts__city">
           Санкт-Петербург</span></address>
         </div>
-    <iframe class="main-footer__frame"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.617229376069!2d30.322822093221312!3d59.938493445474826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1659069154588!5m2!1sru!2s"
-        width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="main-footer__frame-wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/location/location-desktop.webp 1x, img/location/location-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/location/location-tablet.webp 1x, img/location/location-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/location/location-mobile.webp 1x, img/location/location-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/location/location-desktop.jpg 1x, img/location/location-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/location/location-tablet.jpg 1x, img/location/location-mobile@2x.jpg 2x">
+          <img class="main-footer__frame-image" src="img/location/location-mobile.jpg" srcset="img/location/location-mobile@2x.jpg 2x" width="320" height="362" alt="Локация.">
+          </picture>
+      <iframe class="main-footer__frame main-footer__frame--nojs"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.617229376069!2d30.322822093221312!3d59.938493445474826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1659069154588!5m2!1sru!2s"
+          width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </section>
       <div class="main-footer__social">
         <div class="social">
-        <a class="social-footer__logo-name logo-name" href="index.html">
+        <a class="social__footer-logo-name logo-name" href="index.html">
           <img class="main-footer__name-image" src="img/footer/logo-name.svg" width="128" height="24"
             alt="Магазин Cat Energy.">
         </a>

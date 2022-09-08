@@ -1,8 +1,7 @@
 @use "../global/variables.scss";
 @use "../global/mixins.scss";
 
-.another-products__title {
-  margin: 0 0 32px;
+.another-products {
   position: relative;
 
   &::after {
@@ -12,13 +11,17 @@
     background-color: variables.$basic-green;
     right: 0;
     width: 100%;
-    top: 60%;
+    top: 20px;
     overflow: hidden;
     z-index: -1;
   }
 }
 
-.another-products__title--text {
+.another-products__title {
+  margin: 0 0 33px;
+}
+
+.another-products__title-text {
   display: inline-block;
   background-color: variables.$white;
   margin: 0;
@@ -52,35 +55,41 @@
     margin-bottom: 80px;
   }
 
-  .another-products__title--text {
+  .another-products__title-text {
     margin: 0 30px;
     padding: 0 36px 0 37px;
   }
 
   .another-products__item {
-    padding: 26px 38px 26px;
+    padding: 27px 38px;
     border: 1px solid #cdcdcd;
   }
 }
 
 @media (min-width: variables.$desktop-width) {
+  .another-products__wrapper {
+    margin: 0 auto;
+    width: 1220px;
+  }
+
   .another-products__list {
     width: 896px;
-    padding: 0 0 0 110px;
+    padding: 0;
     box-sizing: content-box;
   }
 
   .another-products__title {
-    margin-bottom: 80px;
+    margin-bottom: 78px;
   }
 
-  .another-products__title--text {
-    margin: 0 70px;
+  .another-products__title-text {
+    margin: 0;
+    margin-left: -40px;
     padding: 0 35px 0 40px;
   }
 
   .another-products__item {
-    padding: 16px 0 15px;
+    padding: 16px 0 17px;
     border: none;
     border-bottom: 1px solid #cdcdcd;
   }

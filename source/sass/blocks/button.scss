@@ -39,21 +39,3 @@
     color: rgb(68, 68, 68, 0.3);
   }
 }
-
-.button-catalog {
-  font-size: 16px;
-  padding: 1px 0;
-}
-
-@media (min-width: variables.$tablet-width) {
-  .button-catalog {
-    width: 248px;
-    height: 40px;
-  }
-}
-
-@media (min-width: variables.$desktop-width) {
-  .button-catalog {
-    width: 168px;
-  }
-}

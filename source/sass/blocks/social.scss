@@ -6,7 +6,7 @@
   padding-bottom: 22px;
 }
 
-.social-footer__logo-name {
+.social__footer-logo-name {
   display: block;
   width: 128px;
   margin: 0 auto 27px;
@@ -62,7 +62,7 @@
     padding-top: 60px;
   }
 
-  .social-footer__logo-name {
+  .social__footer-logo-name {
     margin: 0;
     margin-right: 28px;
   }
@@ -76,6 +76,7 @@
 
 @media (min-width: variables.$desktop-width) {
   .social {
-    margin: 0 110px;
+    margin: 0 auto;
+    width: 1220px;
   }
 }

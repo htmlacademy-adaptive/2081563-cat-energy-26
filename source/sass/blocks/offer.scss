@@ -118,6 +118,8 @@
     position: absolute;
     z-index: -1;
     top: 261px;
+    left: 0;
+    right: 0;
   }
 }
 
@@ -138,7 +140,8 @@
   }
 
   .offer__wrapper {
-    margin: 0 110px;
+    width: 1220px;
+    margin: 0 auto;
     padding-top: 223px;
   }
 

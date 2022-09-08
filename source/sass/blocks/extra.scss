@@ -1,14 +1,17 @@
 @use "../global/variables.scss";
 @use "../global/mixins.scss";
 
-.extra__title {
-  margin-bottom: 35px;
+.extra {
   position: relative;
 
   @include mixins.green-line;
 }
 
-.extra__title--text {
+.extra__title {
+  margin-bottom: 35px;
+}
+
+.extra__title-text {
   background-color: variables.$white;
   display: inline-block;
   margin: 0;
@@ -29,7 +32,7 @@
     margin: 0 0 59px;
   }
 
-  .extra__title--text {
+  .extra__title-text {
     padding: 0 40px;
     margin: 0 30px;
   }
@@ -45,16 +48,22 @@
 
 @media (min-width: variables.$desktop-width) {
   .extra__title {
+    width: 1220px;
+    margin: 0 auto;
     margin-bottom: 59px;
   }
 
-  .extra__title--text {
-    margin: 0 70px;
+  .extra__title-text {
+    margin: 0;
+    margin-left: -40px;
   }
 
   .extra__list {
     display: flex;
-    gap: 104px;
-    margin: 0 110px;
+    column-gap: 104px;
+    row-gap: 50px;
+    margin: 0 auto;
+    width: 1220px;
+    flex-wrap: wrap;
   }
 }

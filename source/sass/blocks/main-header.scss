@@ -34,6 +34,38 @@
   }
 }
 
+.main-header__toogle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+}
+
+.main-header__toogle--open {
+  .main-header__close-menu {
+    display: block;
+  }
+
+  .main-header__toogle-burger {
+    display: none;
+  }
+}
+
+.main-header__toogle--closed {
+  .main-header__close-menu {
+    display: none;
+  }
+
+  .main-header__toogle-burger {
+    display: block;
+  }
+}
+
+.main-header__toogle--nojs {
+  visibility: hidden;
+}
+
 @media (min-width: variables.$tablet-width) {
   .main-header {
     margin: 0 30px;
@@ -63,7 +95,8 @@
 
 @media (min-width: variables.$desktop-width) {
   .main-header__wrapper {
-    margin: 0 110px;
+    margin: 0 auto;
+    width: 1220px;
     position: absolute;
     background-color: transparent;
     top: 53px;

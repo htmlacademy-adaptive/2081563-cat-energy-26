@@ -76,8 +76,8 @@
 @media (min-width: variables.$desktop-width) {
   .promotion {
     position: absolute;
-    right: 110px;
-    bottom: 0;
+    right: 0;
+    bottom: 86px;
     padding: 63px 42px 42px;
     margin: 0;
     background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/article/article-mobile.jpg");

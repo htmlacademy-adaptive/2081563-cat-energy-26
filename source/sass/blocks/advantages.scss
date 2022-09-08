@@ -105,7 +105,8 @@
 
 @media (min-width: variables.$desktop-width) {
   .advantages__wrapper {
-    margin: 0 110px;
+    margin: 0 auto;
+    width: 1220px;
   }
 
   .advantages__list {

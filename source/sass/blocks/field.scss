@@ -13,13 +13,13 @@
   align-items: center;
 }
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
+.field__input[type="number"]::-webkit-outer-spin-button,
+.field__input[type="number"]::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
 }
 
-input[type="number"] {
+.field__input[type="number"] {
   appearance: textfield;
 }
 
@@ -44,10 +44,10 @@ input[type="number"] {
   &:focus {
     outline: 2px solid #444444;
 
-    & + .field__input--tel-icon {
+    & + .field__input-tel-icon {
         fill: variables.$basic-green;
     }
-    & + .field__input--email-icon {
+    & + .field__input-email-icon {
         stroke: variables.$basic-green;
     }
   }
@@ -55,10 +55,10 @@ input[type="number"] {
   &:invalid {
     outline: 2px solid #ff8282;
 
-    & + .field__input--tel-icon {
+    & + .field__input-tel-icon {
       fill: #ff8282;
   }
-  & + .field__input--email-icon {
+  & + .field__input-email-icon {
       stroke: #ff8282;
   }
     }
@@ -66,10 +66,10 @@ input[type="number"] {
   &:invalid:placeholder-shown {
     outline-color: #e7e7e7;
 
-    & + .field__input--tel-icon {
+    & + .field__input-tel-icon {
       fill: inherit;
   }
-  & + .field__input--email-icon {
+  & + .field__input-email-icon {
       stroke: #222222;
   }
   }
@@ -84,13 +84,13 @@ input[type="number"] {
   position: relative;
 }
 
-.field__input--email-icon {
+.field__input-email-icon {
   position: absolute;
   right: 16px;
   top: 16.5px;
 }
 
-.field__input--tel-icon {
+.field__input-tel-icon {
   position: absolute;
   right: 13px;
   top: 13px;
