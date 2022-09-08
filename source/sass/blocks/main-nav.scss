@@ -4,34 +4,6 @@
   background-color: variables.$white;
 }
 
-.main-header__toogle {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  width: 24px;
-}
-
-.main-header__toogle--open {
-  .main-header__close-menu {
-    display: block;
-  }
-
-  .main-header__toogle-burger {
-    display: none;
-  }
-}
-
-.main-header__toogle--closed {
-  .main-header__close-menu {
-    display: none;
-  }
-
-  .main-header__toogle-burger {
-    display: block;
-  }
-}
-
 .main-nav__list {
   margin: 0;
   padding: 0;
@@ -51,11 +23,6 @@
   text-transform: uppercase;
   display: block;
   position: relative;
-}
-
-
-.main-header__toogle--nojs {
-  visibility: hidden;
 }
 
 @media (max-width: variables.$mobile-width-only) {

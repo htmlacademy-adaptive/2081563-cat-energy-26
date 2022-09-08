@@ -1,0 +1,44 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
+.comment-section {
+  position: relative;
+
+  @include mixins.green-line;
+}
+
+.comment-section__title {
+  margin: 0 0 38px;
+}
+
+.comment-section__title-text {
+  background-color: variables.$white;
+  display: inline-block;
+  margin: 0;
+  margin-right: 20px;
+  padding: 0 20px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .comment-section__title {
+    margin-bottom: 73px;
+  }
+
+  .comment-section__title-text {
+    margin: 0 30px;
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .comment-section__title {
+    margin: 0 auto;
+    width: 1220px;
+    margin-bottom: 71px;
+  }
+
+  .comment-section__title-text {
+    margin: 0;
+    margin-left: -40px;
+  }
+}
